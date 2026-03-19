@@ -1231,15 +1231,15 @@
         "id": "LFcZP0iLZ7uL5VTYQ2EPL",
         "value": "Constraint:\nCHECK (team1Id<>team2Id)",
         "ui": {
-          "x": 1066.0351,
-          "y": 256.3846,
+          "x": 947.3538,
+          "y": 434.4066,
           "zIndex": 237,
           "width": 164,
           "height": 100,
           "color": ""
         },
         "meta": {
-          "updateAt": 1773953732810,
+          "updateAt": 1773953955483,
           "createAt": 1773953407536
         }
       }
