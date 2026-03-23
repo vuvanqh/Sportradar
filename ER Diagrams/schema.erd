@@ -4,9 +4,9 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -529.7705,
-    "scrollLeft": -280.5631,
-    "zoomLevel": 0.71,
+    "scrollTop": -354.9743,
+    "scrollLeft": -488.3333,
+    "zoomLevel": 0.88,
     "show": 495,
     "database": 2,
     "databaseName": "",
@@ -177,8 +177,10 @@
           "pQRGJlOrtpZP4rE2p0fLz",
           "W4XrkHs4RF9243XETH0f1",
           "iTbIKwuJQ31XRb38_NiJn",
+          "YVYp07JCfi_rDm3agjz10",
           "WgmZt1_QvCL2gdG336IaY",
           "DLTd1nudE4gER66o_AhKo",
+          "KwvlHgiW1qo5kEDQfYk91",
           "TYdeyPd3I7gTQYCvyI9Us",
           "eBDLcm9WZDGhoy2BfdjZI",
           "A1wZ89s8xdsvEp7YHy9R-"
@@ -194,8 +196,10 @@
           "W4XrkHs4RF9243XETH0f1",
           "iTbIKwuJQ31XRb38_NiJn",
           "Qf10j7A-yACd7gETzn45S",
+          "YVYp07JCfi_rDm3agjz10",
           "WgmZt1_QvCL2gdG336IaY",
           "DLTd1nudE4gER66o_AhKo",
+          "KwvlHgiW1qo5kEDQfYk91",
           "TYdeyPd3I7gTQYCvyI9Us",
           "eBDLcm9WZDGhoy2BfdjZI",
           "A1wZ89s8xdsvEp7YHy9R-",
@@ -206,15 +210,15 @@
           "O7EEvXmJ_Lfex0F6-a6ap"
         ],
         "ui": {
-          "x": 963.4971,
-          "y": 352.2676,
+          "x": 894.0235,
+          "y": 324.8991,
           "zIndex": 68,
           "widthName": 60,
           "widthComment": 60,
           "color": ""
         },
         "meta": {
-          "updateAt": 1774266234854,
+          "updateAt": 1774269058976,
           "createAt": 1773952256814
         }
       },
@@ -308,42 +312,42 @@
         "columnIds": [
           "ZrY2bHo-YIirqRxfUNg_z",
           "cW12bACGO_BrlLramyWAw",
-          "QDNIaVRS3KXeM1ugMb2J1",
-          "8Ow4dj94hcASbBeWCLPA_",
+          "7Hjf32kMBovHa1_20ARXF",
           "LFVRcapX7E_pBbcbYR-MM",
           "POdvo-92dUelX7Akr3kE1",
-          "7Hjf32kMBovHa1_20ARXF",
           "CwDgC_IrgNJ7IcyZAxEdP",
           "TPNQnEGM2kVzsRJF9YVF-",
+          "QDNIaVRS3KXeM1ugMb2J1",
+          "8Ow4dj94hcASbBeWCLPA_",
           "U5xwYoECfga6ZP7RvGXsP",
           "kyIrgXsoq32VCfW9SyFy7"
         ],
         "seqColumnIds": [
           "ZrY2bHo-YIirqRxfUNg_z",
           "cW12bACGO_BrlLramyWAw",
-          "QDNIaVRS3KXeM1ugMb2J1",
-          "8Ow4dj94hcASbBeWCLPA_",
+          "7Hjf32kMBovHa1_20ARXF",
           "LFVRcapX7E_pBbcbYR-MM",
           "POdvo-92dUelX7Akr3kE1",
-          "7Hjf32kMBovHa1_20ARXF",
           "DgGqMDpgjje0BB8hjWD3M",
           "AQ_evfi4cRUJBOyhltYSi",
           "CwDgC_IrgNJ7IcyZAxEdP",
           "W_NviSIzyLaI9rwrTp0u4",
           "TPNQnEGM2kVzsRJF9YVF-",
+          "QDNIaVRS3KXeM1ugMb2J1",
+          "8Ow4dj94hcASbBeWCLPA_",
           "U5xwYoECfga6ZP7RvGXsP",
           "kyIrgXsoq32VCfW9SyFy7"
         ],
         "ui": {
-          "x": 994.5364,
-          "y": 1087.8954,
+          "x": 981.5952,
+          "y": 1062.0131,
           "zIndex": 255,
           "widthName": 60,
           "widthComment": 60,
           "color": ""
         },
         "meta": {
-          "updateAt": 1774266234854,
+          "updateAt": 1774271263986,
           "createAt": 1774189787469
         }
       },
@@ -667,7 +671,7 @@
       "DLTd1nudE4gER66o_AhKo": {
         "id": "DLTd1nudE4gER66o_AhKo",
         "tableId": "OCLNLgnAVIJFfRfvZlsj3",
-        "name": "date",
+        "name": "startTime",
         "comment": "",
         "dataType": "datetime",
         "default": "",
@@ -680,7 +684,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774189295742,
+          "updateAt": 1774269040800,
           "createAt": 1773952279905
         }
       },
@@ -888,7 +892,7 @@
         "id": "qEWqfICUnQPqTdCrEGACB",
         "tableId": "OCLNLgnAVIJFfRfvZlsj3",
         "name": "homeTeamId",
-        "comment": "",
+        "comment": "TeamEvent",
         "dataType": "uniqueidentifier",
         "default": "",
         "options": 0,
@@ -900,7 +904,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263012278,
+          "updateAt": 1774271288544,
           "createAt": 1773952582870
         }
       },
@@ -908,7 +912,7 @@
         "id": "18YLg3HdO5m9ZZBAqVFvq",
         "tableId": "OCLNLgnAVIJFfRfvZlsj3",
         "name": "awayTeamId",
-        "comment": "",
+        "comment": "TeamEvent",
         "dataType": "uniqueidentifier",
         "default": "",
         "options": 0,
@@ -920,7 +924,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263016381,
+          "updateAt": 1774271291626,
           "createAt": 1773952609077
         }
       },
@@ -1388,19 +1392,19 @@
         "id": "pQRGJlOrtpZP4rE2p0fLz",
         "tableId": "OCLNLgnAVIJFfRfvZlsj3",
         "name": "homePlayerId",
-        "comment": "Guid",
+        "comment": "OneOnOneEvent",
         "dataType": "uniqueidentifier",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 2,
           "widthName": 75,
-          "widthComment": 60,
+          "widthComment": 91,
           "widthDataType": 86,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263008451,
+          "updateAt": 1774271307887,
           "createAt": 1774262987200
         }
       },
@@ -1408,19 +1412,19 @@
         "id": "W4XrkHs4RF9243XETH0f1",
         "tableId": "OCLNLgnAVIJFfRfvZlsj3",
         "name": "awayPlayerId",
-        "comment": "Guid",
+        "comment": "OneOnOneEvent",
         "dataType": "uniqueidentifier",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 2,
           "widthName": 71,
-          "widthComment": 60,
+          "widthComment": 91,
           "widthDataType": 86,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263007969,
+          "updateAt": 1774271311270,
           "createAt": 1774262991022
         }
       },
@@ -1448,19 +1452,19 @@
         "id": "CwDgC_IrgNJ7IcyZAxEdP",
         "tableId": "Tjy6sCmApXbOZz1DHrxh9",
         "name": "homePlayerScore",
-        "comment": "",
+        "comment": "OneOnOneResult",
         "dataType": "int",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
           "widthName": 94,
-          "widthComment": 60,
+          "widthComment": 94,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263354074,
+          "updateAt": 1774271251645,
           "createAt": 1774263173301
         }
       },
@@ -1468,19 +1472,19 @@
         "id": "QDNIaVRS3KXeM1ugMb2J1",
         "tableId": "Tjy6sCmApXbOZz1DHrxh9",
         "name": "homeTeamId",
-        "comment": "Guid",
+        "comment": "TeamResult",
         "dataType": "uniqueidentifier",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 2,
           "widthName": 71,
-          "widthComment": 60,
+          "widthComment": 62,
           "widthDataType": 86,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263276648,
+          "updateAt": 1774271230516,
           "createAt": 1774263213692
         }
       },
@@ -1508,19 +1512,19 @@
         "id": "8Ow4dj94hcASbBeWCLPA_",
         "tableId": "Tjy6sCmApXbOZz1DHrxh9",
         "name": "awayTeamId",
-        "comment": "Guid",
+        "comment": "TeamResult",
         "dataType": "uniqueidentifier",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 2,
           "widthName": 67,
-          "widthComment": 60,
+          "widthComment": 62,
           "widthDataType": 86,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263291859,
+          "updateAt": 1774271238899,
           "createAt": 1774263282909
         }
       },
@@ -1528,19 +1532,19 @@
         "id": "LFVRcapX7E_pBbcbYR-MM",
         "tableId": "Tjy6sCmApXbOZz1DHrxh9",
         "name": "homePlayerId",
-        "comment": "Guid",
+        "comment": "OneOnOneResult",
         "dataType": "uniqueidentifier",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 2,
           "widthName": 75,
-          "widthComment": 60,
+          "widthComment": 94,
           "widthDataType": 86,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263306150,
+          "updateAt": 1774271246452,
           "createAt": 1774263298347
         }
       },
@@ -1548,19 +1552,19 @@
         "id": "POdvo-92dUelX7Akr3kE1",
         "tableId": "Tjy6sCmApXbOZz1DHrxh9",
         "name": "awayPlayerId",
-        "comment": "Guid",
+        "comment": "OneOnOneResult",
         "dataType": "uniqueidentifier",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 2,
           "widthName": 71,
-          "widthComment": 60,
+          "widthComment": 94,
           "widthDataType": 86,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263320981,
+          "updateAt": 1774271249967,
           "createAt": 1774263313187
         }
       },
@@ -1568,19 +1572,19 @@
         "id": "TPNQnEGM2kVzsRJF9YVF-",
         "tableId": "Tjy6sCmApXbOZz1DHrxh9",
         "name": "awayPlayerScore",
-        "comment": "",
+        "comment": "OneOnOneResult",
         "dataType": "int",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
           "widthName": 90,
-          "widthComment": 60,
+          "widthComment": 94,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263360938,
+          "updateAt": 1774271252505,
           "createAt": 1774263356526
         }
       },
@@ -1588,39 +1592,39 @@
         "id": "U5xwYoECfga6ZP7RvGXsP",
         "tableId": "Tjy6sCmApXbOZz1DHrxh9",
         "name": "homeTeamScore",
-        "comment": "",
+        "comment": "TeamResult",
         "dataType": "int",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
           "widthName": 90,
-          "widthComment": 60,
+          "widthComment": 62,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263369322,
+          "updateAt": 1774271268701,
           "createAt": 1774263362080
         }
       },
       "kyIrgXsoq32VCfW9SyFy7": {
         "id": "kyIrgXsoq32VCfW9SyFy7",
         "tableId": "Tjy6sCmApXbOZz1DHrxh9",
-        "name": "awayPTeamScore",
-        "comment": "",
+        "name": "awayTeamScore",
+        "comment": "TeamResult",
         "dataType": "int",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 93,
-          "widthComment": 60,
+          "widthName": 86,
+          "widthComment": 62,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1774263377319,
+          "updateAt": 1774271269626,
           "createAt": 1774263370480
         }
       },
@@ -1803,6 +1807,46 @@
           "updateAt": 1774263651345,
           "createAt": 1774263642148
         }
+      },
+      "YVYp07JCfi_rDm3agjz10": {
+        "id": "YVYp07JCfi_rDm3agjz10",
+        "tableId": "OCLNLgnAVIJFfRfvZlsj3",
+        "name": "title",
+        "comment": "",
+        "dataType": "varchar(100)",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 67,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1774268079765,
+          "createAt": 1774268071937
+        }
+      },
+      "KwvlHgiW1qo5kEDQfYk91": {
+        "id": "KwvlHgiW1qo5kEDQfYk91",
+        "tableId": "OCLNLgnAVIJFfRfvZlsj3",
+        "name": "endTime",
+        "comment": "",
+        "dataType": "datetime",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1774269056850,
+          "createAt": 1774269046501
+        }
       }
     },
     "relationshipEntities": {
@@ -1965,8 +2009,8 @@
           "columnIds": [
             "qEWqfICUnQPqTdCrEGACB"
           ],
-          "x": 963.4971,
-          "y": 505.6009333333333,
+          "x": 894.0235,
+          "y": 498.23243333333323,
           "direction": 1
         },
         "meta": {
@@ -1993,8 +2037,8 @@
           "columnIds": [
             "18YLg3HdO5m9ZZBAqVFvq"
           ],
-          "x": 963.4971,
-          "y": 566.9342666666666,
+          "x": 894.0235,
+          "y": 567.5657666666666,
           "direction": 1
         },
         "meta": {
@@ -2077,8 +2121,8 @@
           "columnIds": [
             "i4ysNT0rjV1kRXnBEPJVg"
           ],
-          "x": 963.4971,
-          "y": 444.26759999999996,
+          "x": 894.0235,
+          "y": 428.8990999999999,
           "direction": 1
         },
         "meta": {
@@ -2096,8 +2140,8 @@
           "columnIds": [
             "r3MLLki4nPFVKBPTr6RKo"
           ],
-          "x": 1072.7471,
-          "y": 720.2676,
+          "x": 1011.0235,
+          "y": 740.8991,
           "direction": 8
         },
         "end": {
@@ -2152,8 +2196,8 @@
           "columnIds": [
             "r3MLLki4nPFVKBPTr6RKo"
           ],
-          "x": 1291.2471,
-          "y": 720.2676,
+          "x": 1245.0235,
+          "y": 740.8991,
           "direction": 8
         },
         "end": {
@@ -2161,8 +2205,8 @@
           "columnIds": [
             "cW12bACGO_BrlLramyWAw"
           ],
-          "x": 1222.0364,
-          "y": 1087.8954,
+          "x": 1226.0952,
+          "y": 1062.0131,
           "direction": 4
         },
         "meta": {
@@ -2189,8 +2233,8 @@
           "columnIds": [
             "pQRGJlOrtpZP4rE2p0fLz"
           ],
-          "x": 963.4971,
-          "y": 628.2676,
+          "x": 894.0235,
+          "y": 636.8991,
           "direction": 1
         },
         "meta": {
@@ -2217,8 +2261,8 @@
           "columnIds": [
             "W4XrkHs4RF9243XETH0f1"
           ],
-          "x": 963.4971,
-          "y": 689.6009333333334,
+          "x": 894.0235,
+          "y": 706.2324333333333,
           "direction": 1
         },
         "meta": {
@@ -2245,8 +2289,8 @@
           "columnIds": [
             "uqq6X9R_yNYsWvqjbufnH"
           ],
-          "x": 1181.9971,
-          "y": 352.2676,
+          "x": 1128.0235,
+          "y": 324.8991,
           "direction": 4
         },
         "meta": {
@@ -2273,8 +2317,8 @@
           "columnIds": [
             "QDNIaVRS3KXeM1ugMb2J1"
           ],
-          "x": 994.5364,
-          "y": 1119.8954,
+          "x": 981.5952,
+          "y": 1094.0131,
           "direction": 1
         },
         "meta": {
@@ -2329,8 +2373,8 @@
           "columnIds": [
             "8Ow4dj94hcASbBeWCLPA_"
           ],
-          "x": 994.5364,
-          "y": 1183.8954,
+          "x": 981.5952,
+          "y": 1158.0131,
           "direction": 1
         },
         "meta": {
@@ -2357,8 +2401,8 @@
           "columnIds": [
             "LFVRcapX7E_pBbcbYR-MM"
           ],
-          "x": 994.5364,
-          "y": 1247.8954,
+          "x": 981.5952,
+          "y": 1222.0131,
           "direction": 1
         },
         "meta": {
@@ -2385,8 +2429,8 @@
           "columnIds": [
             "POdvo-92dUelX7Akr3kE1"
           ],
-          "x": 994.5364,
-          "y": 1311.8954,
+          "x": 981.5952,
+          "y": 1286.0131,
           "direction": 1
         },
         "meta": {
@@ -2404,8 +2448,8 @@
           "columnIds": [
             "ZrY2bHo-YIirqRxfUNg_z"
           ],
-          "x": 994.5364,
-          "y": 1375.8954,
+          "x": 981.5952,
+          "y": 1350.0131,
           "direction": 1
         },
         "end": {
@@ -2497,8 +2541,8 @@
           "columnIds": [
             "iTbIKwuJQ31XRb38_NiJn"
           ],
-          "x": 963.4971,
-          "y": 382.93426666666664,
+          "x": 894.0235,
+          "y": 359.5657666666666,
           "direction": 1
         },
         "meta": {
@@ -2558,15 +2602,15 @@
         "id": "2KRvu55CGe4HPc3LGbtDW",
         "value": "Result Constraints:\n\n- One Result per Event (EventId UNIQUE)\n\n- If ResultType = Exclusive:\n  - must use either:\n     (HomeTeamId / AwayTeamId)\n     OR\n     (HomePlayerId / AwayPlayerId)\n  - NOT both\n\n- If ResultType = FreeForAll:\n  - no Home/Away fields\n  - use FreeForAllResultEntries\n\n- Home != Away (for both team and player)\n- Scores must be >=0 \n- ResultType must match EventType",
         "ui": {
-          "x": 1457.8206,
-          "y": 1092.6942,
+          "x": 1471.9382,
+          "y": 1059.7529,
           "zIndex": 613,
           "width": 269,
           "height": 291,
           "color": ""
         },
         "meta": {
-          "updateAt": 1774265862605,
+          "updateAt": 1774271276029,
           "createAt": 1774265459151
         }
       },
