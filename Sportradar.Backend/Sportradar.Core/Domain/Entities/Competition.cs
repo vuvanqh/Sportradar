@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Sportradar.Core.Entities;
-
+﻿namespace Sportradar.Core.Entities;
 public enum CompetitionType
 {
     Team,
-    Individual
+    OneOnOne
 }
 
-public class Competition
+public abstract class Competition
 {
     public required Guid Id { get; set; }
     public required string Name { get; set; }
-    public virtual required CompetitionType Type { get; set; }
 
     //relations
     public Guid SportId { get; set; }
@@ -25,11 +19,9 @@ public class Competition
 
 public class TeamCompetition : Competition
 {
-    public override required CompetitionType Type { get; set; } = CompetitionType.Team;
     public ICollection<SportTeam> Teams { get; set; } = new List<SportTeam>();  
 }
-public class IndividualCompetition : Competition
+public class OneOnOneCompetition : Competition
 {
-    public override required CompetitionType Type { get; set; } = CompetitionType.Individual;
     public ICollection<Player> Participants { get; set; } = new List<Player>();
 }

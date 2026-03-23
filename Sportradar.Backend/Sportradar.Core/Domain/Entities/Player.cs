@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Sportradar.Core.Entities;
+﻿namespace Sportradar.Core.Entities;
 
 public class Player
 {
