@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Sportradar.Core.Application.ServiceContracts;
+using Sportradar.Core.Domain;
+using Sportradar.Core.Domain.RepositoryContracts;
 using Sportradar.Infrastructure;
+using Sportradar.Infrastructure.Repositories;
 using System.Text.Json.Serialization;
 
 namespace Sportradar.Backend.ConfigExtentions;
@@ -34,5 +38,11 @@ public static class BaselineConfigExtentions
                     errorNumbersToAdd: null);
             });
         });
+
+        services.AddScoped<IEventService, IEventService>();
+        
+        services.AddScoped<IEventRepository, EventRepository>();
+        services.AddScoped<IPlayerRepository, PlayerRepository>();
+        services.AddScoped<ILocationRepository, LocationRepository>();
     }
 }

@@ -1,4 +1,5 @@
-﻿using Sportradar.Core.Value_Objects;
+﻿using Sportradar.Core.Application.DTOs;
+using Sportradar.Core.Value_Objects;
 
 namespace Sportradar.Core.Entities;
 
@@ -17,6 +18,7 @@ public abstract class Event
     public required string Title { get; set; }
     public DateTime CreatedAt { get; set; }
     public Status Status { get; set; }
+    public string? Description { get; set; }
 
     //relations
     public Guid SportId { get; set; }

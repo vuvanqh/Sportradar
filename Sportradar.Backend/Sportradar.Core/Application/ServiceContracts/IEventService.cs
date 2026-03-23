@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sportradar.Core.Application.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,18 +7,17 @@ namespace Sportradar.Core.Application.ServiceContracts;
 
 public interface IEventService
 {
-    Task GetEventsBySport(Guid sportId);
-    Task GetEventsByCity(Guid cityId);
-    Task GetEventsByCountry(Guid countryId);
-    Task GetEventsByDateRange(DateTime startDate, DateTime endDate);
-    Task GetEventsByCompetition(Guid competitionId);
+    Task<List<EventResponse>> GetEventsBySport(Guid sportId);
+    Task<List<EventResponse>> GetEventsByCity(string city);
+    Task<List<EventResponse>> GetEventsByCountry(string country);
+    Task<List<EventResponse>> GetEventsByLocation(Guid locationId);
+    Task<List<EventResponse>> GetEventsByDateRange(DateTime startDate, DateTime endDate);
+    Task<List<EventResponse>> GetEventsByCompetition(Guid competitionId);
 
-    Task GetEvenstByTeam(Guid teamId);
-    Task GetEvenstByPlayer(Guid playerId);
-
-    Task GetEventDetails(Guid eventId);
-
-    Task CreateEvent();
-    Task UpdateEvent(Guid eventId);
+    Task AddParticipant(Guid eventId, Guid participantId);
+    Task RemoveParticipant(Guid eventId, Guid participantId);
+    Task<EventResponse?> GetEventById(Guid eventId);
+    Task CreateEvent(CreateEventRequest request);
+    Task UpdateEvent(UpdateEventRequest request);
     Task DeleteEvent(Guid eventId);
 }

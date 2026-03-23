@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Sportradar.Core.Application.DTOs.Event;
+namespace Sportradar.Core.Application.DTOs;
 
 public class EventResponse
 {
@@ -15,12 +15,11 @@ public class EventResponse
     [Required] public DateTime StartTime { get; init; }
     [Required] public DateTime EndTime { get; init; }
     [Required] public Status Status { get; init; }
-    [Required] public string? Description { get; init; }
-
     [Required] public string SportName { get; init; } = null!;
 
-    [Required] public Guid CompetitionId { get; init; }
-    [Required] public string? CompetitionName { get; init; }
+    public string? Description { get; init; }
+    public Guid? CompetitionId { get; init; }
+    public string? CompetitionName { get; init; }
 }
 
 public class TeamEventResponse : EventResponse
@@ -35,15 +34,17 @@ public class TeamEventResponse : EventResponse
 public class OneOnOneEventResponse : EventResponse
 {
     [Required] public Guid HomePlayerId { get; init; }
-    [Required] public string HomePlayerName { get; init; } = null!;
+    [Required] public string HomePlayerFirstName { get; init; } = null!;
+    [Required] public string HomePlayerLastName { get; init; } = null!;
     [Required] public Guid AwayPlayerId { get; init; }
-    [Required] public string AwayPlayerName { get; init; } = null!;
+    [Required] public string AwayPlayerFirstName { get; init; } = null!;
+    [Required] public string AwayPlayerLastName { get; init; } = null!;
     [Required] public OneOnOneResultDTO? Result { get; init; }
 }
 
 public class FreeForAllEventResponse : EventResponse
 {
-    [Required] public List<Player> Participants { get; init; } = new List<Player>();
+    [Required] public List<PlayerPreviewDTO> Participants { get; init; } = new List<PlayerPreviewDTO>();
     [Required] public int NumberOfParticipants { get; init; }
     [Required] public FreeForAllResultDTO? Result { get; init; }
 }

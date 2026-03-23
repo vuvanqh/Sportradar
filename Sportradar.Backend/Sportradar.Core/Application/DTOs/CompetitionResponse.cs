@@ -7,7 +7,7 @@ namespace Sportradar.Core.Application.DTOs;
 
 public class CompetitionResponse
 {
-    [Required] public Guid Id { get; init; }
+    [Required] public Guid CompetitionId { get; init; }
     [Required] public string Name { get; init; } = null!;
     [Required] public string SportName { get; init; } = null!;
 }

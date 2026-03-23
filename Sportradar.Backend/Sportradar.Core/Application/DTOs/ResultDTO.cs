@@ -15,33 +15,36 @@ public record ResultDTO
 
 public record OneOnOneResultDTO : ResultDTO
 {
-    [Required] public string HomePlayerName { get; init; } = null!;
-    [Required] public string HomePlayerSurame { get; init; } = null!;
-    [Required] public string AwayPlayerName { get; init; } = null!;
-    [Required] public string AwayPlayerSurame { get; init; } = null!;
+    [Required] public Guid HomePlayerId { get; init; }
+    [Required] public Guid AwayPlayerId { get; init; }
+    [Required] public string HomePlayerFirstName { get; init; } = null!;
+    [Required] public string HomePlayerLastName { get; init; } = null!;
+    [Required] public string AwayPlayerFirstName { get; init; } = null!;
+    [Required] public string AwayPlayerLastName { get; init; } = null!;
     [Required] public int HomePlayerScore { get; init; }
     [Required] public int AwayPlayerScore { get; init; }
 }
 
 public record TeamResultDTO : ResultDTO
 {
+    [Required] public Guid HomeTeamId { get; init; }
+    [Required] public Guid AwayTeamId { get; init; }
     [Required] public string HomeTeamName { get; init; } = null!;
-    [Required] public string HomeTeamSurame { get; init; } = null!;
     [Required] public string AwayTeamName { get; init; } = null!;
-    [Required] public string AwayTeamSurame { get; init; } = null!;
     [Required] public int HomeTeamScore { get; init; }
     [Required] public int AwayTeamScore { get; init; }
 }
 
 public record FreeForAllResultDTO : ResultDTO
 {
-    [Required] public List<FreeForAllResultEntryDTO> Results = new();
+    [Required] public List<FreeForAllResultEntryDTO> Results { get; set; } = new();
     [Required] public int NumberOfParticipants { get; init; }
 }
 
 public record FreeForAllResultEntryDTO
 {
-    [Required] public string PlayerName { get; init; } = null!;
-    [Required] public string PlayerSurname { get; init; } = null!;
+    [Required] public Guid PlayerId { get; init; }
+    [Required] public string FirstName { get; init; } = null!;
+    [Required] public string LastName { get; init; } = null!;
     [Required] public int Score { get; init; }
 }
