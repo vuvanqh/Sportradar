@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Sportradar.Core.Entities;
+using System.Text.Json;
 
 namespace Sportradar.Infrastructure.EntityConfig;
 
@@ -17,5 +18,15 @@ public class SportTeamConfig : IEntityTypeConfiguration<SportTeam>
 
         builder.HasIndex(team => team.Name).IsUnique();
         builder.HasIndex(team => team.Id);
+
+        var path = Path.Combine(AppContext.BaseDirectory, "seed", "teams.json");
+        var json = File.ReadAllText(path);
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        List<SportTeam> teams = JsonSerializer.Deserialize<List<SportTeam>>(json,options)!;
+
+        builder.HasData(teams);
     }
 }

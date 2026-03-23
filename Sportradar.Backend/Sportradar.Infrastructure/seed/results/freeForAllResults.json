@@ -1,0 +1,62 @@
+[
+  {
+    "Id": "d7e0b5cb-6db7-4f83-a618-ca0c0a1d15f8",
+    "EventId": "26aa4ed6-dbb6-4a5b-968d-152408e19e47",
+    "Entries": [
+      {
+        "Score": 55,
+        "PlayerId": "1cd1883a-ab26-4d90-8a92-d3ae85823405"
+      },
+      {
+        "Score": 60,
+        "PlayerId": "7f955f03-2ac5-4abf-a392-a5caebcac4ba"
+      },
+      {
+        "Score": 45,
+        "PlayerId": "b909d54a-105b-487e-9a72-afab7619f728"
+      },
+      {
+        "Score": 8,
+        "PlayerId": "fa623a7f-7ff8-4b51-85ed-3e8ecfc6aefc"
+      },
+      {
+        "Score": 20,
+        "PlayerId": "3886dfad-81c3-407e-90c2-320ef7e4c6b8"
+      },
+      {
+        "Score": 74,
+        "PlayerId": "be595bb9-5817-41a5-b930-22f96423af27"
+      },
+      {
+        "Score": 24,
+        "PlayerId": "6b56101c-1aae-4eca-9f60-21f5a8b4b861"
+      },
+      {
+        "Score": 70,
+        "PlayerId": "aeaad94b-d53d-44a6-839f-28a9e59995fe"
+      }
+    ]
+  },
+  {
+    "Id": "ca4fabff-959a-49fb-879c-2f87be938ae0",
+    "EventId": "26aa4ed6-dbb6-4a5b-968d-152408e19e47",
+    "Entries": [
+      {
+        "Score": 82,
+        "PlayerId": "eef00e5e-2122-4c1f-b195-6ba66767fcf2"
+      },
+      {
+        "Score": 22,
+        "PlayerId": "923dd26e-9cdf-4b52-a7b4-add88396d4d8"
+      },
+      {
+        "Score": 21,
+        "PlayerId": "f9227d6c-7a53-4095-ade4-3b731ce7c24d"
+      },
+      {
+        "Score": 57,
+        "PlayerId": "84c84e38-b4ed-4d67-8d61-a8ea776cd531"
+      }
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "ed686301-5213-4db5-aff7-dfab21bbce33",
+    "EventId": "f379cb66-de6f-4c6f-8edf-4b43fb3b7dc0",
+    "HomeTeamScore": 5,
+    "AwayTeamScore": 2,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e16",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e20"
+  },
+  {
+    "Id": "94bd45d2-6b86-486f-824e-3dc23c11c6b6",
+    "EventId": "a4203808-3ca8-4cc3-9f66-17475caebde7",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 5,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e20",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e39"
+  },
+  {
+    "Id": "b7834c81-eb10-4335-80d5-7649cb5eaa1c",
+    "EventId": "796af5a2-2043-46e2-9ada-9720e7b3f309",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 4,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e10",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e24"
+  },
+  {
+    "Id": "3ab81867-d864-4e6d-9b6d-38eb6820ad70",
+    "EventId": "4a2fc518-a245-4cc0-bcbb-08a27c85efc1",
+    "HomeTeamScore": 5,
+    "AwayTeamScore": 4,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e30",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e19"
+  },
+  {
+    "Id": "4f8c8fde-7b9f-45e1-b6eb-1b3a4010a5a6",
+    "EventId": "2b3a6a63-6035-4cda-b402-860157fdf242",
+    "HomeTeamScore": 3,
+    "AwayTeamScore": 5,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e31",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e01"
+  },
+  {
+    "Id": "90ab062d-8d9d-4471-b376-f67e32f602b7",
+    "EventId": "9bd288df-dc22-4194-98d8-40395a28fe2f",
+    "HomeTeamScore": 5,
+    "AwayTeamScore": 1,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e13",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e11"
+  },
+  {
+    "Id": "9f77115e-ae75-4e0a-8e15-0c13b7548413",
+    "EventId": "122b68bc-1ce7-4288-b850-19fa9c5c9519",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 4,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e49",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e08"
+  },
+  {
+    "Id": "3e555ff8-5522-406a-b08c-d811e5e5f08d",
+    "EventId": "0f8ff454-2900-4049-89ab-599b58b61462",
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 1,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e31",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e01"
+  },
+  {
+    "Id": "5c312a6f-16c5-42dd-9978-e102133cfe3b",
+    "EventId": "7ad4e397-536c-4216-804b-6e6c864058d8",
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 4,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e12",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e42"
+  },
+  {
+    "Id": "a5c23bac-702a-45f3-bf5a-71d2e601e243",
+    "EventId": "a36e7ece-4df7-41da-b566-07429856484b",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 3,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e50",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e43"
+  },
+  {
+    "Id": "94069ca4-5cc6-4c55-a76d-b4bfa609d763",
+    "EventId": "3fec9e6f-5556-4089-9e3f-1d537ffb52e3",
+    "HomeTeamScore": 5,
+    "AwayTeamScore": 0,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e18",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e34"
+  },
+  {
+    "Id": "d647e970-c414-4026-885c-fe86428f5aec",
+    "EventId": "52abd6e2-accc-469e-b9e3-e0c66dfba741",
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+    "HomeTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e18",
+    "AwayTeamId": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e03"
+  }
+]

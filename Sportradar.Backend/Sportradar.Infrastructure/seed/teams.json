@@ -1,0 +1,360 @@
+[
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e01",
+    "Name": "Velocity Runners",
+    "OfficialName": "Velocity Runners Club",
+    "Abbreviation": "VRC",
+    "sportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e02",
+    "Name": "Softball Strikers",
+    "OfficialName": "Chicago Softball Strikers",
+    "Abbreviation": "CSS",
+    "sportId": "29feb1a0-c511-72ea-a51c-781c608b7053"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e03",
+    "Name": "Squamish Titans",
+    "OfficialName": "Squamish Titans Club",
+    "Abbreviation": "STC",
+    "sportId": "8ec93998-742d-ee73-9a47-f5ab3cacb05f"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e04",
+    "Name": "Rapid Sprinters",
+    "OfficialName": "Rapid Sprinters Association",
+    "Abbreviation": "RSA",
+    "sportId": "dec97476-cbcf-d31d-a26a-7f8320d8d02d"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e05",
+    "Name": "ATV Thunder",
+    "OfficialName": "ATV Thunder Racing Team",
+    "Abbreviation": "ATR",
+    "sportId": "b70d4953-9a62-2a40-36b5-64cacaf9ba7f"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e06",
+    "Name": "Vertical Climbers",
+    "OfficialName": "Vertical Climbers Club",
+    "Abbreviation": "VCC",
+    "sportId": "b0e9fd11-e86f-930f-e185-41ca9f890502"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e07",
+    "Name": "Acro Masters",
+    "OfficialName": "Acro Masters Team",
+    "Abbreviation": "AMT",
+    "sportId": "ef4bba86-627b-ced8-b7ab-fd8bcf69464e"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e08",
+    "Name": "Gym Stars",
+    "OfficialName": "Acrobatic Gymnastics Stars",
+    "Abbreviation": "AGS",
+    "sportId": "fe7fe68f-35de-ccd5-9c72-d2cc661b6e36"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e09",
+    "Name": "Sky Flyers",
+    "OfficialName": "Aerobatics Sky Flyers",
+    "Abbreviation": "ASF",
+    "sportId": "23884f25-c4c7-229c-d265-c242c612971d"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e10",
+    "Name": "Fitness Elite",
+    "OfficialName": "Aerobic Gymnastics Elite",
+    "Abbreviation": "AGE",
+    "sportId": "05f9bebc-c17f-206f-bc31-10a6c5f394b1"
+  },
+
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e11",
+    "Name": "Cliff Raiders",
+    "OfficialName": "Aid Climbing Raiders",
+    "Abbreviation": "ACR",
+    "sportId": "ca8c3218-d315-7bd9-b768-4700b9799c28"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e12",
+    "Name": "Aiki Warriors",
+    "OfficialName": "Aiki-Jujutsu Warriors",
+    "Abbreviation": "AJW",
+    "sportId": "c8f74912-27af-0d5d-f6ea-0110bea20cc2"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e13",
+    "Name": "Aikido Spirits",
+    "OfficialName": "Aikido Spirits Club",
+    "Abbreviation": "ASC",
+    "sportId": "facc278e-dd4d-f9f2-a80f-cfaa59821165"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e14",
+    "Name": "Ice Blasters",
+    "OfficialName": "Air Hockey Blasters",
+    "Abbreviation": "AHB",
+    "sportId": "39b0c886-227f-e7c3-7be4-f7dabadd180f"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e15",
+    "Name": "Sky Racers",
+    "OfficialName": "Air Racing Champions",
+    "Abbreviation": "ARC",
+    "sportId": "c1297fed-d6ba-38bd-ce99-cb1c903cde98"
+  },
+
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e16",
+    "Name": "Airsoft Wolves",
+    "OfficialName": "Airsoft Wolves Unit",
+    "Abbreviation": "AWU",
+    "sportId": "6cb90207-290c-0c0c-50a7-ae2ef2426a38"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e17",
+    "Name": "Lumber Titans",
+    "OfficialName": "Aizkolaritza Titans",
+    "Abbreviation": "ALT",
+    "sportId": "3ef3424c-4912-4286-0f72-6c6e7ec55057"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e18",
+    "Name": "Terrain Kings",
+    "OfficialName": "All Terrain Kings",
+    "Abbreviation": "ATK",
+    "sportId": "8e0a46eb-8584-19aa-adbe-a76a62420f56"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e19",
+    "Name": "Alpine Eagles",
+    "OfficialName": "Alpine Skiing Eagles",
+    "Abbreviation": "ASE",
+    "sportId": "dad192a8-87c1-bf57-a29d-6ec026cca760"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e20",
+    "Name": "Wrestling Force",
+    "OfficialName": "Amateur Wrestling Force",
+    "Abbreviation": "AWF",
+    "sportId": "49dacbfe-6a10-3d1b-f995-18e03f1cd430"
+  },
+
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e21",
+    "Name": "Gridiron Legends",
+    "OfficialName": "American Football Legends",
+    "Abbreviation": "AFL",
+    "sportId": "1e55a651-ed48-b796-92de-79b07904ab51"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e22",
+    "Name": "Angling Masters",
+    "OfficialName": "Angling Masters Club",
+    "Abbreviation": "AMC",
+    "sportId": "ee8b32f2-67d1-2164-4cbe-9a99ae71e0d3"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e23",
+    "Name": "Aquathlon Pros",
+    "OfficialName": "Aquathlon Pro Team",
+    "Abbreviation": "APT",
+    "sportId": "fcdcccdd-f0d9-0820-981d-012e3253fd0f"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e24",
+    "Name": "Arrow Legends",
+    "OfficialName": "Archery Legends",
+    "Abbreviation": "ARL",
+    "sportId": "bb064091-fdc6-8976-ea85-e4e319beeefd"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e25",
+    "Name": "Arm Crushers",
+    "OfficialName": "Arm Wrestling Crushers",
+    "Abbreviation": "AWC",
+    "sportId": "9fe59a11-efee-09b0-bc16-39d5d2f19ba6"
+  },
+
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e26",
+    "Name": "Gym Elite",
+    "OfficialName": "Artistic Gymnastics Elite",
+    "Abbreviation": "AGE",
+    "sportId": "03b87dbf-242d-138e-fa35-efd95452dd90"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e27",
+    "Name": "Football United",
+    "OfficialName": "Association Football United",
+    "Abbreviation": "AFU",
+    "sportId": "81271228-cba0-a3a8-f73e-955884e1a6a9"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e28",
+    "Name": "Aussie Kickers",
+    "OfficialName": "Australian Football Kickers",
+    "Abbreviation": "AFK",
+    "sportId": "67922b9e-e2fa-797d-eaa6-3af30ce6ad94"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e29",
+    "Name": "Auto Racers",
+    "OfficialName": "Auto Racing Racers",
+    "Abbreviation": "ARR",
+    "sportId": "ef8f9e46-0cbf-55d2-3da7-7b003695bbaa"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e30",
+    "Name": "Axe Throwers",
+    "OfficialName": "Axe Throwing Club",
+    "Abbreviation": "ATC",
+    "sportId": "2435bcc2-ee0f-8dfe-cdef-f8a3f7db07d3"
+  },
+
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e31",
+    "Name": "BMX Riders",
+    "OfficialName": "BMX Riders Team",
+    "Abbreviation": "BMX",
+    "sportId": "aa448715-dce8-1c93-dd44-f97ea6bcba55"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e32",
+    "Name": "Backgammon Pros",
+    "OfficialName": "Backgammon Professionals",
+    "Abbreviation": "BGP",
+    "sportId": "2e89598e-c81e-89d5-bae2-aee451063265"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e33",
+    "Name": "Badminton Smash",
+    "OfficialName": "Badminton Smash Club",
+    "Abbreviation": "BSC",
+    "sportId": "3d949aba-5399-278c-1014-e473bbf9c86a"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e34",
+    "Name": "Bandy Ice",
+    "OfficialName": "Bandy Ice Team",
+    "Abbreviation": "BIT",
+    "sportId": "046de523-edca-4687-9ce6-b4123624bf9f"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e35",
+    "Name": "Baseball Legends",
+    "OfficialName": "Baseball Legends Club",
+    "Abbreviation": "BLC",
+    "sportId": "ea94a7ff-1f4c-a3aa-c0fb-c78682a7801e"
+  },
+
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e36",
+    "Name": "Basketball Kings",
+    "OfficialName": "Basketball Kings Club",
+    "Abbreviation": "BKC",
+    "sportId": "c71a1808-3d9e-74b4-a5c5-d8d9a17d68d0"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e37",
+    "Name": "Beach Volleyball Pros",
+    "OfficialName": "Beach Volleyball Professionals",
+    "Abbreviation": "BVP",
+    "sportId": "2fb5c562-2ecb-e6d8-1df1-27855ec41fbc"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e38",
+    "Name": "Biathlon Squad",
+    "OfficialName": "Biathlon Squad Team",
+    "Abbreviation": "BST",
+    "sportId": "e9ef7da8-7555-d96b-7540-f7dd41f76163"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e39",
+    "Name": "Billiards Masters",
+    "OfficialName": "Billiards Masters Club",
+    "Abbreviation": "BMC",
+    "sportId": "23d6cf9e-3037-f752-ce16-9f0186ae43ec"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e40",
+    "Name": "Bobsleigh Speed",
+    "OfficialName": "Bobsleigh Speed Team",
+    "Abbreviation": "BST",
+    "sportId": "2ff2586a-c8c0-cd4a-a21d-357be417ecdb"
+  },
+
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e41",
+    "Name": "Bowling Pros",
+    "OfficialName": "Bowling Professionals",
+    "Abbreviation": "BWP",
+    "sportId": "bfdf3e6d-a677-560f-50f1-4da49d892040"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e42",
+    "Name": "Boxing Titans",
+    "OfficialName": "Boxing Titans Club",
+    "Abbreviation": "BTC",
+    "sportId": "19bf99f6-abb9-3fbe-21c3-ca9cebe96304"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e43",
+    "Name": "BJJ Warriors",
+    "OfficialName": "Brazilian Jiu-Jitsu Warriors",
+    "Abbreviation": "BJJ",
+    "sportId": "faa1960e-3544-ad70-5114-06b6c19b9ecd"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e44",
+    "Name": "Curling Stones",
+    "OfficialName": "Curling Stones Team",
+    "Abbreviation": "CST",
+    "sportId": "bb3b807c-6396-c151-c831-c7fb78e18ec2"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e45",
+    "Name": "Cycling Pros",
+    "OfficialName": "Cycling Professionals",
+    "Abbreviation": "CYP",
+    "sportId": "14943f54-ebfe-a380-49fe-16972c96772e"
+  },
+
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e46",
+    "Name": "Darts Legends",
+    "OfficialName": "Darts Legends Club",
+    "Abbreviation": "DLC",
+    "sportId": "676ff0cc-57a8-e1fd-e6f0-d40eb9642970"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e47",
+    "Name": "Diving Masters",
+    "OfficialName": "Diving Masters Team",
+    "Abbreviation": "DMT",
+    "sportId": "b87d3bca-03f0-cc52-6ea8-464dce49e22d"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e48",
+    "Name": "Dodgeball Squad",
+    "OfficialName": "Dodgeball Squad Club",
+    "Abbreviation": "DSC",
+    "sportId": "00756fa2-92c1-4832-14f3-6c913abbc4f8"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e49",
+    "Name": "Equestrian Elite",
+    "OfficialName": "Equestrian Elite Club",
+    "Abbreviation": "EEC",
+    "sportId": "88300fc9-dd6b-f232-0afd-ea09398857a8"
+  },
+  {
+    "Id": "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e50",
+    "Name": "Fencing Blades",
+    "OfficialName": "Fencing Blades Club",
+    "Abbreviation": "FBC",
+    "sportId": "ad0b8f04-9250-bca6-71aa-bed2ff32fd89"
+  }
+]

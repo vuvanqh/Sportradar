@@ -1,0 +1,399 @@
+[
+  {
+    "Id": "bfd868e4-e4d1-421c-bbf5-8ee5fc40bcc5",
+    "StartTime": "2026-04-21T20:37:14.896868+00:00",
+    "EndTime": "2026-04-21T22:37:14.896868+00:00",
+    "Title": "FFA Event 1",
+    "CreatedAt": "2026-03-23T20:37:14.896926+00:00",
+    "Status": "Upcoming",
+    "SportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1",
+    "LocationId": "b1343d17-5ea9-4a8d-ac1b-a6f059aeb1c8",
+    "CompetitionId": null,
+    "Participants": [
+      "ab6652ec-dd23-4616-9c49-3a14894395f9",
+      "f21e750e-7a20-4705-8be6-f20f0871c4c0",
+      "b909d54a-105b-487e-9a72-afab7619f728",
+      "ba7f2281-f655-4d35-875b-60dd1a193012",
+      "524fdd87-c7b6-47a6-9049-400f734d5b0d"
+    ]
+  },
+  {
+    "Id": "ec3a6140-2664-4b9e-979c-3ef442b6827d",
+    "StartTime": "2026-04-08T20:37:14.896941+00:00",
+    "EndTime": "2026-04-08T22:37:14.896941+00:00",
+    "Title": "FFA Event 2",
+    "CreatedAt": "2026-03-23T20:37:14.896976+00:00",
+    "Status": "Upcoming",
+    "SportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1",
+    "LocationId": "e3e0ff41-39c9-4072-a435-49fdb2b7337a",
+    "CompetitionId": null,
+    "Participants": [
+      "30d19a48-edd1-45d9-a48f-d48302bc8fdb",
+      "6a281ac1-ea42-4e21-9d77-8e6287b4a83c",
+      "aeaad94b-d53d-44a6-839f-28a9e59995fe",
+      "01a14062-4382-4744-bc54-a28415c4b3d5"
+    ]
+  },
+  {
+    "Id": "98e9d026-4f9a-4bed-b1e5-f736d85d6833",
+    "StartTime": "2026-03-24T20:37:14.896987+00:00",
+    "EndTime": "2026-03-24T22:37:14.896987+00:00",
+    "Title": "FFA Event 3",
+    "CreatedAt": "2026-03-23T20:37:14.897018+00:00",
+    "Status": "Upcoming",
+    "SportId": "14943f54-ebfe-a380-49fe-16972c96772e",
+    "LocationId": "deb41b5e-0cc0-4c9d-94e1-5a191a9b7245",
+    "CompetitionId": null,
+    "Participants": [
+      "8fdf1631-e5e4-446d-89b9-d8a753b7e545",
+      "c96f3d3a-f2c7-4012-967a-98672a710ab4",
+      "be595bb9-5817-41a5-b930-22f96423af27",
+      "ac51bc33-cf49-47f1-97b6-c4c68c28230e"
+    ]
+  },
+  {
+    "Id": "3cfe0142-60d5-44fc-9b09-cb63f8697734",
+    "StartTime": "2026-04-07T20:37:14.897032+00:00",
+    "EndTime": "2026-04-07T22:37:14.897032+00:00",
+    "Title": "FFA Event 4",
+    "CreatedAt": "2026-03-23T20:37:14.897062+00:00",
+    "Status": "Upcoming",
+    "SportId": "14943f54-ebfe-a380-49fe-16972c96772e",
+    "LocationId": "183fadfa-4806-4bb4-8160-2b319e27fdf4",
+    "CompetitionId": null,
+    "Participants": [
+      "b5a369de-9db6-4088-837d-525f3b573509",
+      "f21e750e-7a20-4705-8be6-f20f0871c4c0",
+      "0f5a5dc1-06a8-4baf-8cb8-649a6ff18691",
+      "f730305e-a04e-4ae8-8784-701864cbe4de",
+      "f9227d6c-7a53-4095-ade4-3b731ce7c24d",
+      "80f216d4-e38e-46ee-ae43-904c3fe22c61",
+      "25c825ed-64e7-40c8-8554-7e14ad02fcef",
+      "dd4994ed-adea-4925-b621-48234a037a03",
+      "d5133a6e-bce4-4879-b443-e2033b5ebe2c",
+      "a8c5e0dc-9577-44b9-8b4f-c7fc58a7cb02"
+    ]
+  },
+  {
+    "Id": "92878ee6-f627-4514-967f-f4eb0ae89687",
+    "StartTime": "2026-03-31T20:37:14.897074+00:00",
+    "EndTime": "2026-03-31T22:37:14.897074+00:00",
+    "Title": "FFA Event 5",
+    "CreatedAt": "2026-03-23T20:37:14.897103+00:00",
+    "Status": "Upcoming",
+    "SportId": "14943f54-ebfe-a380-49fe-16972c96772e",
+    "LocationId": "602d5318-028a-47f2-a6c1-7fe002a05886",
+    "CompetitionId": null,
+    "Participants": [
+      "1cd1883a-ab26-4d90-8a92-d3ae85823405",
+      "9c91d6d2-29f4-45cb-a479-9a4857e1cde9",
+      "74430cdb-f106-412d-92a5-1745c1b1713b",
+      "7980cddd-4836-43a3-a51d-af02f6a7853b",
+      "ce3368d3-3d92-4b19-94ba-35a600d062ff",
+      "79627b27-80fd-42e4-8d0f-34a1cdde37af",
+      "5aeb9c7d-5012-4eea-ac7f-55a1cca25337",
+      "c783cdec-d0de-4457-afe8-611f67bfc549",
+      "06610b73-e9d2-4a81-a440-4abfc0252480",
+      "0f5a5dc1-06a8-4baf-8cb8-649a6ff18691"
+    ]
+  },
+  {
+    "Id": "595ea0d7-7472-4f54-ae53-de3e7fb5d112",
+    "StartTime": "2026-03-23T19:37:14.897113+00:00",
+    "EndTime": "2026-03-23T21:37:14.897113+00:00",
+    "Title": "FFA Event 6",
+    "CreatedAt": "2026-03-23T20:37:14.897153+00:00",
+    "Status": "Ongoing",
+    "SportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1",
+    "LocationId": "42755488-3df0-48d2-ac7f-2a533b8ea4bc",
+    "CompetitionId": null,
+    "Participants": [
+      "fbc64301-bdcf-499c-a56d-84f7650fa3f8",
+      "eef00e5e-2122-4c1f-b195-6ba66767fcf2",
+      "0cbaf1e0-e6da-4017-ab51-91d474de4590",
+      "ce3368d3-3d92-4b19-94ba-35a600d062ff",
+      "9e13dde8-9c12-4dc2-a78f-2639d0f6e74d"
+    ]
+  },
+  {
+    "Id": "d2f2d94e-434a-4870-8a7b-f1fcf11b0169",
+    "StartTime": "2026-03-24T20:37:14.897169+00:00",
+    "EndTime": "2026-03-24T22:37:14.897169+00:00",
+    "Title": "FFA Event 7",
+    "CreatedAt": "2026-03-23T20:37:14.897200+00:00",
+    "Status": "Upcoming",
+    "SportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1",
+    "LocationId": "61473c26-3c02-4fd6-9866-cd504d113b53",
+    "CompetitionId": null,
+    "Participants": [
+      "0cbaf1e0-e6da-4017-ab51-91d474de4590",
+      "dd4994ed-adea-4925-b621-48234a037a03",
+      "06610b73-e9d2-4a81-a440-4abfc0252480",
+      "1049a7ad-6bd7-4ab6-9100-ad1791e5d310",
+      "8fba2e10-c00a-4a7e-8bf4-0fce4608c0f7",
+      "7980cddd-4836-43a3-a51d-af02f6a7853b"
+    ]
+  },
+  {
+    "Id": "01850e4d-f875-4128-90c2-a111361b46d7",
+    "StartTime": "2026-04-13T20:37:14.897211+00:00",
+    "EndTime": "2026-04-13T22:37:14.897211+00:00",
+    "Title": "FFA Event 8",
+    "CreatedAt": "2026-03-23T20:37:14.897241+00:00",
+    "Status": "Upcoming",
+    "SportId": "69865761-f5ad-a556-d183-daad50bed867",
+    "LocationId": "a023d7dc-77de-49db-b2eb-608d3e3999f9",
+    "CompetitionId": null,
+    "Participants": [
+      "8bdeffd1-36cd-4412-b684-132ff1d922b4",
+      "f905da96-e3e3-4746-a489-ea78a6f339cd",
+      "49845bb1-012a-4494-a7b8-10e1654cb892",
+      "74430cdb-f106-412d-92a5-1745c1b1713b",
+      "f21e750e-7a20-4705-8be6-f20f0871c4c0",
+      "5aeb9c7d-5012-4eea-ac7f-55a1cca25337",
+      "287afb5b-7c78-472d-bf5c-a771005e12b8",
+      "0ff02f47-978f-4f82-845d-05e3f53a5cea",
+      "80f216d4-e38e-46ee-ae43-904c3fe22c61",
+      "aa299e79-a63c-43a6-9147-3b05f933da92"
+    ]
+  },
+  {
+    "Id": "5e119616-1a43-4a30-91a2-dd60740c0d30",
+    "StartTime": "2026-04-03T20:37:14.897251+00:00",
+    "EndTime": "2026-04-03T22:37:14.897251+00:00",
+    "Title": "FFA Event 9",
+    "CreatedAt": "2026-03-23T20:37:14.897280+00:00",
+    "Status": "Upcoming",
+    "SportId": "69865761-f5ad-a556-d183-daad50bed867",
+    "LocationId": "9999e90f-2aea-4e61-b1e5-b0c9f27b7b57",
+    "CompetitionId": null,
+    "Participants": [
+      "ab6652ec-dd23-4616-9c49-3a14894395f9",
+      "50115915-2682-4d6c-8299-c3a8813d4e2a",
+      "5ccca19a-20c6-4dd1-85c9-01cbb62a0064",
+      "a8c5e0dc-9577-44b9-8b4f-c7fc58a7cb02",
+      "eef00e5e-2122-4c1f-b195-6ba66767fcf2",
+      "f905da96-e3e3-4746-a489-ea78a6f339cd"
+    ]
+  },
+  {
+    "Id": "b710cca0-d94a-45ac-a10e-4f076b0dd9f9",
+    "StartTime": "2026-03-23T19:37:14.897290+00:00",
+    "EndTime": "2026-03-23T21:37:14.897290+00:00",
+    "Title": "FFA Event 10",
+    "CreatedAt": "2026-03-23T20:37:14.897329+00:00",
+    "Status": "Ongoing",
+    "SportId": "14943f54-ebfe-a380-49fe-16972c96772e",
+    "LocationId": "4bd56324-46c7-4477-975d-51cfff786ba6",
+    "CompetitionId": null,
+    "Participants": [
+      "1cd1883a-ab26-4d90-8a92-d3ae85823405",
+      "7f955f03-2ac5-4abf-a392-a5caebcac4ba",
+      "b909d54a-105b-487e-9a72-afab7619f728",
+      "fa623a7f-7ff8-4b51-85ed-3e8ecfc6aefc",
+      "3886dfad-81c3-407e-90c2-320ef7e4c6b8",
+      "be595bb9-5817-41a5-b930-22f96423af27",
+      "6b56101c-1aae-4eca-9f60-21f5a8b4b861",
+      "aeaad94b-d53d-44a6-839f-28a9e59995fe"
+    ]
+  },
+  {
+    "Id": "58ea051b-5bbe-461e-a442-ef3f02e72097",
+    "StartTime": "2026-04-16T20:37:14.897346+00:00",
+    "EndTime": "2026-04-16T22:37:14.897346+00:00",
+    "Title": "FFA Event 11",
+    "CreatedAt": "2026-03-23T20:37:14.897374+00:00",
+    "Status": "Upcoming",
+    "SportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1",
+    "LocationId": "d72ce1cc-e653-41c9-a973-9535bab7b9cd",
+    "CompetitionId": null,
+    "Participants": [
+      "42d98365-773d-42da-90ab-67e9b4994d8e",
+      "d84ee6ec-7b4a-4a35-97cf-1b048c66a547",
+      "30d19a48-edd1-45d9-a48f-d48302bc8fdb",
+      "106e0942-b4c6-4f1b-888d-109fa3fa265f",
+      "ac28f651-1c7a-4771-a5ec-5964a278c56d",
+      "b909d54a-105b-487e-9a72-afab7619f728",
+      "aeaad94b-d53d-44a6-839f-28a9e59995fe",
+      "f905da96-e3e3-4746-a489-ea78a6f339cd"
+    ]
+  },
+  {
+    "Id": "c60febb3-746b-44ad-b3fc-100b29aa6978",
+    "StartTime": "2026-04-22T20:37:14.897385+00:00",
+    "EndTime": "2026-04-22T22:37:14.897385+00:00",
+    "Title": "FFA Event 12",
+    "CreatedAt": "2026-03-23T20:37:14.897414+00:00",
+    "Status": "Upcoming",
+    "SportId": "14943f54-ebfe-a380-49fe-16972c96772e",
+    "LocationId": "093c0143-0b65-42d7-bc0d-bc2b879ee9c1",
+    "CompetitionId": null,
+    "Participants": [
+      "816c603d-480a-426f-91f0-d90bdf3098d0",
+      "a9cdef7b-76ee-4d95-a1e9-b9124b48bb34",
+      "524fdd87-c7b6-47a6-9049-400f734d5b0d",
+      "63691cb6-4422-4f7c-a792-7402f69315e3",
+      "326c3848-29b6-45db-9bdb-b54f36d032e2",
+      "d84ee6ec-7b4a-4a35-97cf-1b048c66a547",
+      "929a8c5c-8428-4f7e-aff9-c57a1ef5d6e1",
+      "f0f95faa-7284-4201-8496-d3b748034cfe",
+      "15937465-c356-4bc3-bbd5-0993ce8c729f",
+      "3949dad8-baec-45f3-a653-2315609575b9"
+    ]
+  },
+  {
+    "Id": "26aa4ed6-dbb6-4a5b-968d-152408e19e47",
+    "StartTime": "2026-02-28T20:37:14.897422+00:00",
+    "EndTime": "2026-02-28T22:37:14.897422+00:00",
+    "Title": "FFA Event 13",
+    "CreatedAt": "2026-03-23T20:37:14.897460+00:00",
+    "Status": "Completed",
+    "SportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1",
+    "LocationId": "fdfc84bf-a1ed-4cd3-812f-942d318676c5",
+    "CompetitionId": null,
+    "Participants": [
+      "eef00e5e-2122-4c1f-b195-6ba66767fcf2",
+      "923dd26e-9cdf-4b52-a7b4-add88396d4d8",
+      "f9227d6c-7a53-4095-ade4-3b731ce7c24d",
+      "84c84e38-b4ed-4d67-8d61-a8ea776cd531"
+    ]
+  },
+  {
+    "Id": "c74df6fd-6a57-4fdf-b592-ec26a6ce5a79",
+    "StartTime": "2026-04-16T20:37:14.897474+00:00",
+    "EndTime": "2026-04-16T22:37:14.897474+00:00",
+    "Title": "FFA Event 14",
+    "CreatedAt": "2026-03-23T20:37:14.897505+00:00",
+    "Status": "Upcoming",
+    "SportId": "69865761-f5ad-a556-d183-daad50bed867",
+    "LocationId": "6c86eada-50ae-419d-b6f0-13945ef3be1a",
+    "CompetitionId": null,
+    "Participants": [
+      "c783cdec-d0de-4457-afe8-611f67bfc549",
+      "f730305e-a04e-4ae8-8784-701864cbe4de",
+      "79146bc7-783e-4d7e-a3cc-a6de5377b715",
+      "287afb5b-7c78-472d-bf5c-a771005e12b8",
+      "b909d54a-105b-487e-9a72-afab7619f728",
+      "b5a369de-9db6-4088-837d-525f3b573509",
+      "d5133a6e-bce4-4879-b443-e2033b5ebe2c",
+      "3ff4f819-2fad-41c6-a887-203b5612ae06",
+      "c96f3d3a-f2c7-4012-967a-98672a710ab4"
+    ]
+  },
+  {
+    "Id": "390d873e-3baf-4452-9f3a-6fbaf8850084",
+    "StartTime": "2026-04-18T20:37:14.897516+00:00",
+    "EndTime": "2026-04-18T22:37:14.897516+00:00",
+    "Title": "FFA Event 15",
+    "CreatedAt": "2026-03-23T20:37:14.897545+00:00",
+    "Status": "Upcoming",
+    "SportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1",
+    "LocationId": "862b6af7-40fa-484d-a5ef-1e4620f15fd5",
+    "CompetitionId": null,
+    "Participants": [
+      "5ccca19a-20c6-4dd1-85c9-01cbb62a0064",
+      "3a2a5037-5139-4199-b926-f20c77c771bd",
+      "8fdf1631-e5e4-446d-89b9-d8a753b7e545",
+      "d84ee6ec-7b4a-4a35-97cf-1b048c66a547",
+      "929a8c5c-8428-4f7e-aff9-c57a1ef5d6e1",
+      "f9227d6c-7a53-4095-ade4-3b731ce7c24d",
+      "e678a5e3-d8d9-46c8-9f49-944091a5b7d5",
+      "3949dad8-baec-45f3-a653-2315609575b9",
+      "106e0942-b4c6-4f1b-888d-109fa3fa265f",
+      "287afb5b-7c78-472d-bf5c-a771005e12b8"
+    ]
+  },
+  {
+    "Id": "4320a74c-28e3-45aa-9233-4b062485ffce",
+    "StartTime": "2026-04-12T20:37:14.897554+00:00",
+    "EndTime": "2026-04-12T22:37:14.897554+00:00",
+    "Title": "FFA Event 16",
+    "CreatedAt": "2026-03-23T20:37:14.897582+00:00",
+    "Status": "Upcoming",
+    "SportId": "69865761-f5ad-a556-d183-daad50bed867",
+    "LocationId": "4b15f09d-7fe1-442a-a7e8-ca8ae6595253",
+    "CompetitionId": null,
+    "Participants": [
+      "aeaad94b-d53d-44a6-839f-28a9e59995fe",
+      "a9cdef7b-76ee-4d95-a1e9-b9124b48bb34",
+      "f7fa64cd-3b66-4e85-a52d-1f00efe5e096",
+      "287afb5b-7c78-472d-bf5c-a771005e12b8"
+    ]
+  },
+  {
+    "Id": "003ded91-4985-4919-b3e0-5d14134fb7cb",
+    "StartTime": "2026-04-09T20:37:14.897593+00:00",
+    "EndTime": "2026-04-09T22:37:14.897593+00:00",
+    "Title": "FFA Event 17",
+    "CreatedAt": "2026-03-23T20:37:14.897623+00:00",
+    "Status": "Upcoming",
+    "SportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1",
+    "LocationId": "e3e0ff41-39c9-4072-a435-49fdb2b7337a",
+    "CompetitionId": null,
+    "Participants": [
+      "1049a7ad-6bd7-4ab6-9100-ad1791e5d310",
+      "15937465-c356-4bc3-bbd5-0993ce8c729f",
+      "ac28f651-1c7a-4771-a5ec-5964a278c56d",
+      "5aeb9c7d-5012-4eea-ac7f-55a1cca25337",
+      "df9c0f94-0034-45ba-a429-82afaa0027af",
+      "a8c5e0dc-9577-44b9-8b4f-c7fc58a7cb02",
+      "326c3848-29b6-45db-9bdb-b54f36d032e2",
+      "aab0abaa-e81b-4d85-a793-869dd0a52cca"
+    ]
+  },
+  {
+    "Id": "9de58de2-499e-4088-8f0e-18a7b2c69c70",
+    "StartTime": "2026-03-31T20:37:14.897631+00:00",
+    "EndTime": "2026-03-31T22:37:14.897631+00:00",
+    "Title": "FFA Event 18",
+    "CreatedAt": "2026-03-23T20:37:14.897659+00:00",
+    "Status": "Upcoming",
+    "SportId": "14943f54-ebfe-a380-49fe-16972c96772e",
+    "LocationId": "4bd56324-46c7-4477-975d-51cfff786ba6",
+    "CompetitionId": null,
+    "Participants": [
+      "326c3848-29b6-45db-9bdb-b54f36d032e2",
+      "fa623a7f-7ff8-4b51-85ed-3e8ecfc6aefc",
+      "3886dfad-81c3-407e-90c2-320ef7e4c6b8",
+      "aeaad94b-d53d-44a6-839f-28a9e59995fe"
+    ]
+  },
+  {
+    "Id": "4208b97e-50a8-41d4-b52c-a3221f80b47b",
+    "StartTime": "2026-04-20T20:37:14.897669+00:00",
+    "EndTime": "2026-04-20T22:37:14.897669+00:00",
+    "Title": "FFA Event 19",
+    "CreatedAt": "2026-03-23T20:37:14.897697+00:00",
+    "Status": "Upcoming",
+    "SportId": "7dcd0029-0ee4-e489-97e1-f63bf0dbebb1",
+    "LocationId": "4063dc53-0cc3-46b4-8454-0bf2dc67ad26",
+    "CompetitionId": null,
+    "Participants": [
+      "8fdf1631-e5e4-446d-89b9-d8a753b7e545",
+      "42d98365-773d-42da-90ab-67e9b4994d8e",
+      "3411d4ab-0f72-42b0-a250-3ce7b23cba53",
+      "79627b27-80fd-42e4-8d0f-34a1cdde37af",
+      "6bf9b796-548c-4087-99d8-61346eb7d1ab",
+      "e5aac0f2-8694-4f16-860d-ec3a7e50c06d",
+      "f905da96-e3e3-4746-a489-ea78a6f339cd",
+      "9e13dde8-9c12-4dc2-a78f-2639d0f6e74d"
+    ]
+  },
+  {
+    "Id": "d0cdfdc1-4d5e-4af3-a76a-d3f21910f2d5",
+    "StartTime": "2026-04-22T20:37:14.897705+00:00",
+    "EndTime": "2026-04-22T22:37:14.897705+00:00",
+    "Title": "FFA Event 20",
+    "CreatedAt": "2026-03-23T20:37:14.897732+00:00",
+    "Status": "Upcoming",
+    "SportId": "14943f54-ebfe-a380-49fe-16972c96772e",
+    "LocationId": "ea02c707-329d-4c5a-8d5c-7b93074104cf",
+    "CompetitionId": null,
+    "Participants": [
+      "82cdfd38-6dcd-4357-8517-068fe625a57f",
+      "8fdf1631-e5e4-446d-89b9-d8a753b7e545",
+      "f905da96-e3e3-4746-a489-ea78a6f339cd",
+      "25c825ed-64e7-40c8-8554-7e14ad02fcef"
+    ]
+  }
+]

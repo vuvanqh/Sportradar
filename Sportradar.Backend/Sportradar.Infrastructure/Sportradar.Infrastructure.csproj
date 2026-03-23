@@ -19,4 +19,10 @@
     <ProjectReference Include="..\Sportradar.Core\Sportradar.Core.csproj" />
   </ItemGroup>
 
+    <ItemGroup>
+	    <None Update="seed\**\*.json">
+		    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    </None>
+    </ItemGroup>
+
 </Project>

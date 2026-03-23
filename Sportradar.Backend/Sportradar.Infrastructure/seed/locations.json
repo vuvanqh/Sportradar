@@ -1,0 +1,302 @@
+[
+  {
+    "id": "2593f033-0159-4f5a-9d1a-6634810df8f8",
+    "country": "Colombia",
+    "city": "Piedecuesta",
+    "venue": "Estadio Metropolitano"
+  },
+  {
+    "id": "83f8058c-ea70-42c3-8e16-b732fe76c924",
+    "country": "China",
+    "city": "Langchi",
+    "venue": "Beijing National Stadium"
+  },
+  {
+    "id": "a86091d9-a578-4dde-8dbb-efb64638bc46",
+    "country": "Japan",
+    "city": "Minamata",
+    "venue": "Tokyo Dome"
+  },
+  {
+    "id": "42755488-3df0-48d2-ac7f-2a533b8ea4bc",
+    "country": "France",
+    "city": "Issy-les-Moulineaux",
+    "venue": "Stade de France"
+  },
+  {
+    "id": "efff37eb-19d9-4453-800e-a884b2d2476e",
+    "country": "Philippines",
+    "city": "Punolu",
+    "venue": "Philippine Arena"
+  },
+  {
+    "id": "fc099e22-cd19-4738-b74e-caa08c561f33",
+    "country": "Poland",
+    "city": "Bogoria",
+    "venue": "Stadion Śląski"
+  },
+  {
+    "id": "04482f8d-b6c0-49f9-9d5c-15ac463d436b",
+    "country": "China",
+    "city": "Fushan",
+    "venue": "Beijing National Stadium"
+  },
+  {
+    "id": "d3050a37-cb44-4b89-83fe-d4db0f7d496c",
+    "country": "Latvia",
+    "city": "Inčukalns",
+    "venue": null
+  },
+  {
+    "id": "0a29604b-5f28-4a13-a5d8-18f3c7225ebd",
+    "country": "Russia",
+    "city": "Sosnovyy Bor",
+    "venue": "Luzhniki Stadium"
+  },
+  {
+    "id": "d446a584-4090-4c1a-9c94-2b0adc20d4e9",
+    "country": "Japan",
+    "city": "Ōhara",
+    "venue": "Tokyo Dome"
+  },
+  {
+    "id": "d72ce1cc-e653-41c9-a973-9535bab7b9cd",
+    "country": "France",
+    "city": "Bourg-en-Bresse",
+    "venue": null
+  },
+  {
+    "id": "f6b99cc6-dd77-4f44-bbf3-4b0e4be8083e",
+    "country": "Malaysia",
+    "city": "Ipoh",
+    "venue": null
+  },
+  {
+    "id": "862b6af7-40fa-484d-a5ef-1e4620f15fd5",
+    "country": "United States",
+    "city": "Asheville",
+    "venue": "Madison Square Garden"
+  },
+  {
+    "id": "c3d2a0c5-349e-49f7-a8a7-32916542fab6",
+    "country": "Mozambique",
+    "city": "Tete",
+    "venue": null
+  },
+  {
+    "id": "4b15f09d-7fe1-442a-a7e8-ca8ae6595253",
+    "country": "Japan",
+    "city": "Shizukuishi",
+    "venue": null
+  },
+  {
+    "id": "fdfc84bf-a1ed-4cd3-812f-942d318676c5",
+    "country": "Netherlands",
+    "city": "Delft",
+    "venue": null
+  },
+  {
+    "id": "a59053a6-43f7-44bc-89f8-f63653ace0ed",
+    "country": "Serbia",
+    "city": "Stara Pazova",
+    "venue": null
+  },
+  {
+    "id": "91106284-674d-4b88-a760-b039ec5974c2",
+    "country": "Chile",
+    "city": "Graneros",
+    "venue": null
+  },
+  {
+    "id": "506f4a6e-aba4-4a2a-ae40-d31969a0f7f6",
+    "country": "Guatemala",
+    "city": "San Benito",
+    "venue": null
+  },
+  {
+    "id": "183fadfa-4806-4bb4-8160-2b319e27fdf4",
+    "country": "Indonesia",
+    "city": "Juai",
+    "venue": "Gelora Bung Karno Stadium"
+  },
+  {
+    "id": "4f0a32a5-23f7-4269-9eef-d8ffac49a26a",
+    "country": "Portugal",
+    "city": "Souto",
+    "venue": "Estádio da Luz"
+  },
+  {
+    "id": "7512d9b1-5991-4782-97d6-a4047314ef61",
+    "country": "Indonesia",
+    "city": "Krajan Karanganyar",
+    "venue": "Gelora Bung Karno Stadium"
+  },
+  {
+    "id": "2c6789c8-c983-4d50-ad1e-d446a58f4e71",
+    "country": "Poland",
+    "city": "Chełmża",
+    "venue": null
+  },
+  {
+    "id": "6c86eada-50ae-419d-b6f0-13945ef3be1a",
+    "country": "Bulgaria",
+    "city": "Vratsa",
+    "venue": null
+  },
+  {
+    "id": "b1343d17-5ea9-4a8d-ac1b-a6f059aeb1c8",
+    "country": "Japan",
+    "city": "Obita",
+    "venue": null
+  },
+  {
+    "id": "8bb6ff87-4371-4641-bbee-cd7d542c5a1c",
+    "country": "Armenia",
+    "city": "Masis",
+    "venue": null
+  },
+  {
+    "id": "e3e0ff41-39c9-4072-a435-49fdb2b7337a",
+    "country": "Sweden",
+    "city": "Stockholm",
+    "venue": null
+  },
+  {
+    "id": "9999e90f-2aea-4e61-b1e5-b0c9f27b7b57",
+    "country": "Portugal",
+    "city": "Carvalhal",
+    "venue": null
+  },
+  {
+    "id": "99ed121e-9ca3-4406-b222-776ace1d31eb",
+    "country": "Brazil",
+    "city": "Tupanciretã",
+    "venue": "Maracanã Stadium"
+  },
+  {
+    "id": "deb41b5e-0cc0-4c9d-94e1-5a191a9b7245",
+    "country": "France",
+    "city": "Brive-la-Gaillarde",
+    "venue": "Stade de France"
+  },
+  {
+    "id": "1507750d-852f-496f-bf15-3a611c3451c4",
+    "country": "Slovenia",
+    "city": "Notranje Gorice",
+    "venue": null
+  },
+  {
+    "id": "093c0143-0b65-42d7-bc0d-bc2b879ee9c1",
+    "country": "China",
+    "city": "Chengzihe",
+    "venue": null
+  },
+  {
+    "id": "ad6fcc8b-91e7-440e-ab53-6956c7943260",
+    "country": "Greece",
+    "city": "Nerokoúros",
+    "venue": null
+  },
+  {
+    "id": "285ead1e-8ae4-49fc-90e7-9ca9c92b98cd",
+    "country": "Mexico",
+    "city": "Emiliano Zapata",
+    "venue": "Estadio Azteca"
+  },
+  {
+    "id": "1b68c42a-69fb-4527-87f2-3817b6f1eea0",
+    "country": "Indonesia",
+    "city": "Belang",
+    "venue": "Gelora Bung Karno Stadium"
+  },
+  {
+    "id": "977abc7d-8de9-4d20-890a-c51f892e55fe",
+    "country": "Peru",
+    "city": "Pueblo Nuevo",
+    "venue": null
+  },
+  {
+    "id": "943d4995-0af7-4116-a0b2-b7d4e400a195",
+    "country": "Thailand",
+    "city": "Pathum Thani",
+    "venue": "Rajamangala Stadium"
+  },
+  {
+    "id": "bf01395f-ec5e-49d4-8014-f192ede18d89",
+    "country": "China",
+    "city": "Bulongji",
+    "venue": "Beijing National Stadium"
+  },
+  {
+    "id": "602d5318-028a-47f2-a6c1-7fe002a05886",
+    "country": "Czech Republic",
+    "city": "Dolní Cerekev",
+    "venue": null
+  },
+  {
+    "id": "ea02c707-329d-4c5a-8d5c-7b93074104cf",
+    "country": "China",
+    "city": "Jiujie",
+    "venue": "Beijing National Stadium"
+  },
+  {
+    "id": "8b637138-0bc8-45d0-8a25-0c5eefdc2354",
+    "country": "Croatia",
+    "city": "Metković",
+    "venue": null
+  },
+  {
+    "id": "825db822-f258-4cc7-bc47-2b49847fc1c0",
+    "country": "China",
+    "city": "Jinan",
+    "venue": "Beijing National Stadium"
+  },
+  {
+    "id": "a023d7dc-77de-49db-b2eb-608d3e3999f9",
+    "country": "Philippines",
+    "city": "Lusacan",
+    "venue": "Philippine Arena"
+  },
+  {
+    "id": "61473c26-3c02-4fd6-9866-cd504d113b53",
+    "country": "China",
+    "city": "Anjie",
+    "venue": "Beijing National Stadium"
+  },
+  {
+    "id": "4063dc53-0cc3-46b4-8454-0bf2dc67ad26",
+    "country": "China",
+    "city": "Amu Gulang Baolige",
+    "venue": "Beijing National Stadium"
+  },
+  {
+    "id": "548c38f5-3e6c-4ae9-864a-c6112c9ff945",
+    "country": "Iraq",
+    "city": "Ar Ruţbah",
+    "venue": null
+  },
+  {
+    "id": "4bd56324-46c7-4477-975d-51cfff786ba6",
+    "country": "Russia",
+    "city": "Nizhnyaya Tavda",
+    "venue": "Luzhniki Stadium"
+  },
+  {
+    "id": "0ea9a9f1-e6a6-4e28-9076-7ff0d308dae0",
+    "country": "China",
+    "city": "Zhanghua",
+    "venue": null
+  },
+  {
+    "id": "08c58c7b-5eca-4879-a4a6-78c2a4f12c95",
+    "country": "China",
+    "city": "Mengxi",
+    "venue": "Beijing National Stadium"
+  },
+  {
+    "id": "1fa5f685-6eea-4a27-b163-df71b15ba3ea",
+    "country": "Poland",
+    "city": "Klimontów",
+    "venue": "PGE Narodowy"
+  }
+]

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Sportradar.Core.Application.ServiceContracts;
+using Sportradar.Core.Application.Services;
 using Sportradar.Core.Domain;
 using Sportradar.Core.Domain.RepositoryContracts;
 using Sportradar.Infrastructure;
@@ -32,14 +33,16 @@ public static class BaselineConfigExtentions
             options.UseSqlServer(config.GetConnectionString("Default"), sqlOptions =>
             {
                 sqlOptions.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery);
+                options.EnableSensitiveDataLogging();
                 sqlOptions.EnableRetryOnFailure(
                     maxRetryCount: 5,
                     maxRetryDelay: TimeSpan.FromSeconds(5),
                     errorNumbersToAdd: null);
             });
+
         });
 
-        services.AddScoped<IEventService, IEventService>();
+        services.AddScoped<IEventService, EventService>();
         
         services.AddScoped<IEventRepository, EventRepository>();
         services.AddScoped<IPlayerRepository, PlayerRepository>();

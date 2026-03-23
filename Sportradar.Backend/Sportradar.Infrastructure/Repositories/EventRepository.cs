@@ -28,6 +28,16 @@ public class EventRepository : IEventRepository
         }
     }
 
+    public async Task<List<Event>> GetAllAsync()
+    {
+        return await _context.Events
+            .Include(e => e.Location)
+            .Include(e => e.Sport)
+            .Include(e => e.Result)
+            .Include(e => e.Competition)
+            .ToListAsync();
+    }
+
     public async Task<List<Event>> GetByCityAsync(string city)
     {
         return await _context.Events.Where(e => e.Location.City == city)

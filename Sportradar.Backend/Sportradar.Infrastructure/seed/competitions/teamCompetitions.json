@@ -1,0 +1,202 @@
+[
+  {
+    "Id": "3cce59fc-624b-451c-b85b-6db63ec2122f",
+    "Name": "Team Competition 1",
+    "SportId": "2fb5c562-2ecb-e6d8-1df1-27855ec41fbc",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e28",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e31",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e37",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e01"
+    ]
+  },
+  {
+    "Id": "873d5de9-7d1b-496f-adb5-8bc1f49eb125",
+    "Name": "Team Competition 2",
+    "SportId": "c71a1808-3d9e-74b4-a5c5-d8d9a17d68d0",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e32",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e18",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e42",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e11",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e03",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e34",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e50"
+    ]
+  },
+  {
+    "Id": "73c730e2-888c-483a-88ee-aafa93199c79",
+    "Name": "Team Competition 3",
+    "SportId": "81271228-cba0-a3a8-f73e-955884e1a6a9",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e16",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e48",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e24",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e03"
+    ]
+  },
+  {
+    "Id": "38dbb2df-c668-4dc4-827e-fae461170dc4",
+    "Name": "Team Competition 4",
+    "SportId": "81271228-cba0-a3a8-f73e-955884e1a6a9",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e09",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e39",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e23",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e25",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e27",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e19",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e44",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e17",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e30",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e12"
+    ]
+  },
+  {
+    "Id": "861ca559-04b1-499d-97dc-4f584c882f01",
+    "Name": "Team Competition 5",
+    "SportId": "2fb5c562-2ecb-e6d8-1df1-27855ec41fbc",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e43",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e24",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e09",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e30",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e16",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e29"
+    ]
+  },
+  {
+    "Id": "8030c878-b9cd-42ff-968c-fa57b4124586",
+    "Name": "Team Competition 6",
+    "SportId": "2fb5c562-2ecb-e6d8-1df1-27855ec41fbc",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e03",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e38",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e01",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e16",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e09",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e13",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e20"
+    ]
+  },
+  {
+    "Id": "ab2f289e-f8ef-41df-8950-d7c131de290e",
+    "Name": "Team Competition 7",
+    "SportId": "2fb5c562-2ecb-e6d8-1df1-27855ec41fbc",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e50",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e16",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e21",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e43",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e36",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e29"
+    ]
+  },
+  {
+    "Id": "7714c5bc-37f3-45fb-a960-7f5e4d83d3de",
+    "Name": "Team Competition 8",
+    "SportId": "81271228-cba0-a3a8-f73e-955884e1a6a9",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e05",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e42",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e38",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e21",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e33",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e11",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e15"
+    ]
+  },
+  {
+    "Id": "ba237839-67b3-421e-8408-7dd1c3befda5",
+    "Name": "Team Competition 9",
+    "SportId": "81271228-cba0-a3a8-f73e-955884e1a6a9",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e03",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e32",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e20",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e39",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e43"
+    ]
+  },
+  {
+    "Id": "57701735-cd3e-4459-8304-c0e188bc4544",
+    "Name": "Team Competition 10",
+    "SportId": "c71a1808-3d9e-74b4-a5c5-d8d9a17d68d0",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e06",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e10",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e25",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e37",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e24",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e39",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e49",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e08"
+    ]
+  },
+  {
+    "Id": "47026737-b389-40fa-a55c-7d84a70308cb",
+    "Name": "Team Competition 11",
+    "SportId": "c71a1808-3d9e-74b4-a5c5-d8d9a17d68d0",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e11",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e13",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e23",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e28",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e27",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e29",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e16"
+    ]
+  },
+  {
+    "Id": "716fe5c4-141e-447d-97e7-e53623544a41",
+    "Name": "Team Competition 12",
+    "SportId": "2fb5c562-2ecb-e6d8-1df1-27855ec41fbc",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e10",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e40",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e34",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e12",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e08",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e18"
+    ]
+  },
+  {
+    "Id": "8fab57b1-91dd-4c04-a2a2-b7578c371c80",
+    "Name": "Team Competition 13",
+    "SportId": "81271228-cba0-a3a8-f73e-955884e1a6a9",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e11",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e43",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e42",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e12",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e47",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e31"
+    ]
+  },
+  {
+    "Id": "57bd9522-aee4-40f9-8fec-4f35df7b2fdc",
+    "Name": "Team Competition 14",
+    "SportId": "81271228-cba0-a3a8-f73e-955884e1a6a9",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e28",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e15",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e01",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e35",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e46",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e03"
+    ]
+  },
+  {
+    "Id": "0576cc1a-0f67-491d-a5c2-5e971a40733c",
+    "Name": "Team Competition 15",
+    "SportId": "81271228-cba0-a3a8-f73e-955884e1a6a9",
+    "Teams": [
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e16",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e06",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e17",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e29",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e26",
+      "9f1a2b7c-1c4e-4d8a-9f01-1a2b3c4d5e38"
+    ]
+  }
+]

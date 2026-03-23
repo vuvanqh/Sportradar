@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Sportradar.Core.Entities;
+using System.Text.Json;
 
 namespace Sportradar.Infrastructure.EntityConfig;
 
@@ -49,6 +50,7 @@ public class OneOnOneResultConfig : IEntityTypeConfiguration<OneOnOneResult>
 
         builder.HasIndex(r => r.HomePlayerId);
         builder.HasIndex(r => r.AwayPlayerId);
+
     }
 }
 
@@ -84,6 +86,16 @@ public class TeamResultConfig : IEntityTypeConfiguration<TeamResult>
 
         builder.HasIndex(r => r.HomeTeamId);
         builder.HasIndex(r => r.AwayTeamId);
+
+  
+    }
+}
+
+public class FreeForAllResultConfig : IEntityTypeConfiguration<FreeForAllResult>
+{
+    public void Configure(EntityTypeBuilder<FreeForAllResult> builder)
+    {
+
     }
 }
 
@@ -116,6 +128,8 @@ public class FreeForAllResultEntryConfig : IEntityTypeConfiguration<FreeForAllRe
 
         builder.HasIndex(r => r.ResultId);
         builder.HasIndex(r => r.PlayerId);
+
+    
     }
 }
 

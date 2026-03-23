@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Sportradar.Core.Entities;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Sportradar.Infrastructure.EntityConfig;
 
@@ -26,6 +28,7 @@ public class EventConfig : IEntityTypeConfiguration<Event>
             .HasForeignKey(e => e.CompetitionId)
             .IsRequired(false);
 
+
         builder.HasOne(c => c.Sport)
             .WithMany()
             .HasForeignKey(c => c.SportId)
@@ -36,9 +39,6 @@ public class EventConfig : IEntityTypeConfiguration<Event>
 
         builder.Property(e => e.CompetitionId)
             .HasColumnName("_CompetitionId");
-
-        builder.Property(e => e.ResultId)
-            .HasColumnName("_ResultId");
 
         builder.Property(e => e.LocationId)
             .HasColumnName("_LocationId");
@@ -73,6 +73,20 @@ public class OneOnOneEventConfig : IEntityTypeConfiguration<OneOnOneEvent>
             "CK_OneOnOneEvent_HomeAwayDifferent",
             "[_HomePlayerId] <> [_AwayPlayerId] OR (EventType != 0)"
         ));
+
+        //var path = Path.Combine(AppContext.BaseDirectory, "seed", "events", "oneOnOneEvents.json");
+        //var options = new JsonSerializerOptions
+        //{
+        //    PropertyNameCaseInsensitive = true
+        //};
+        //options.Converters.Add(new JsonStringEnumConverter());
+
+        //var json = File.ReadAllText(path);
+        //List<OneOnOneEvent> events = JsonSerializer.Deserialize<List<OneOnOneEvent>>(json, options)!;
+        //if (events == null)
+        //    throw new Exception("Deserialization failed");
+
+        //builder.HasData(events);
     }
 }
 
@@ -100,6 +114,17 @@ public class TeamEventConfig : IEntityTypeConfiguration<TeamEvent>
             "CK_TeamEvent_HomeAwayDifferent",
             "[_HomeTeamId] <> [_AwayTeamId] OR (EventType != 1)"
         ));
+
+        //var path = Path.Combine(AppContext.BaseDirectory, "seed", "events", "teamEvents.json");
+        //var json = File.ReadAllText(path);
+        //var options = new JsonSerializerOptions
+        //{
+        //    PropertyNameCaseInsensitive = true
+        //};
+        //options.Converters.Add(new JsonStringEnumConverter());
+        //List<TeamEvent> events = JsonSerializer.Deserialize<List<TeamEvent>>(json, options)!;
+
+        //builder.HasData(events);
     }
 }
 
@@ -108,22 +133,37 @@ public class FreeForAllEventConfig : IEntityTypeConfiguration<FreeForAllEvent>
     public void Configure(EntityTypeBuilder<FreeForAllEvent> builder)
     {
         builder.HasMany(e => e.Participants)
-            .WithMany()
+            .WithMany(p => p.FreeForAllEvents)
             .UsingEntity<Dictionary<string, object>>(
                 "FreeForAllEventParticipants",
                 j => j
                     .HasOne<Player>()
                     .WithMany()
                     .HasForeignKey("_PlayerId")
+                    .HasPrincipalKey(p=>p.Id)
                     .OnDelete(DeleteBehavior.Cascade),
                 j => j
                     .HasOne<FreeForAllEvent>()
                     .WithMany()
                     .HasForeignKey("_EventId")
+                    .HasPrincipalKey(e => e.Id)
                     .OnDelete(DeleteBehavior.Cascade),
                 j =>
                 {
                     j.HasKey("_EventId", "_PlayerId");
                 });
+
+        //var path = Path.Combine(AppContext.BaseDirectory, "seed", "events", "freeForAllEvents.json");
+        //var json = File.ReadAllText(path);
+
+        //var options = new JsonSerializerOptions
+        //{
+        //    PropertyNameCaseInsensitive = true
+        //};
+        //options.Converters.Add(new JsonStringEnumConverter());
+
+        //List<FreeForAllEvent> events = JsonSerializer.Deserialize<List<FreeForAllEvent>>(json, options)!;
+
+        //builder.HasData(events);
     }
 }

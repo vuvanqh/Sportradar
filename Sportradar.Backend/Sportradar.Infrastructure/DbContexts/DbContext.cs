@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Sportradar.Core.Entities;
+using Sportradar.Infrastructure.EntityConfig;
 
 namespace Sportradar.Infrastructure;
 
@@ -18,6 +20,11 @@ public class ApplicationDbContext: DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        //modelBuilder.ApplyConfiguration(new EventConfig());
+        //modelBuilder.ApplyConfiguration(new TeamEventConfig());
+
+        //modelBuilder.ApplyConfiguration(new FreeForAllEventConfig());
+        //modelBuilder.ApplyConfiguration(new OneOnOneEventConfig());
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
     }
 }

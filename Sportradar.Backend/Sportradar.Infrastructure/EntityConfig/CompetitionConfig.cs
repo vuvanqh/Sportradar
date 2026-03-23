@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Sportradar.Core.Entities;
+using System.Text.Json;
 
 
 namespace Sportradar.Infrastructure.EntityConfig;
@@ -44,6 +45,12 @@ public class TeamCompetitionConfig : IEntityTypeConfiguration<TeamCompetition>
                 {
                     j.HasKey("CompetitionId", "TeamId");
                 });
+
+        var path = Path.Combine(AppContext.BaseDirectory, "seed", "competitions", "teamCompetitions.json");
+        var json = File.ReadAllText(path);
+        List<TeamCompetition> comp = JsonSerializer.Deserialize<List<TeamCompetition>>(json)!;
+
+        builder.HasData(comp);
     }
 }
 
@@ -69,5 +76,15 @@ public class OneOnOneCompetitionConfig : IEntityTypeConfiguration<OneOnOneCompet
                 {
                     j.HasKey("CompetitionId", "PlayerId");
                 });
+
+        var path = Path.Combine(AppContext.BaseDirectory, "seed", "competitions", "oneOnOneCompetitions.json");
+        var json = File.ReadAllText(path);
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        List<OneOnOneCompetition> comp = JsonSerializer.Deserialize<List<OneOnOneCompetition>>(json, options)!;
+
+        builder.HasData(comp);
     }
 }

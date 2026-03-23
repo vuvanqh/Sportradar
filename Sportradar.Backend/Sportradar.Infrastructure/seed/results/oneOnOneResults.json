@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "12f47d96-1101-469f-8739-da50ac5ffff5",
+    "EventId": "e7cf902c-487f-4601-99a5-0c4bdedc75c5",
+    "HomePlayerScore": 3,
+    "AwayPlayerScore": 0,
+    "HomePlayerId": "6673244c-9b14-4ba7-93ec-8682e3f20798",
+    "AwayPlayerId": "e678a5e3-d8d9-46c8-9f49-944091a5b7d5"
+  },
+  {
+    "Id": "050510b4-8f15-4cfa-b312-65e70c911143",
+    "EventId": "c48ac397-8039-4cc7-9ae0-fbc59bc76d64",
+    "HomePlayerScore": 3,
+    "AwayPlayerScore": 3,
+    "HomePlayerId": "be595bb9-5817-41a5-b930-22f96423af27",
+    "AwayPlayerId": "929a8c5c-8428-4f7e-aff9-c57a1ef5d6e1"
+  },
+  {
+    "Id": "699c4149-e3e1-4ef0-b9be-ef876e0f824e",
+    "EventId": "79a237a9-cec1-4a7b-9b16-128169a6e002",
+    "HomePlayerScore": 1,
+    "AwayPlayerScore": 0,
+    "HomePlayerId": "6faeba8d-cd23-4a01-a28c-ee87c6cf0b39",
+    "AwayPlayerId": "a7597e5d-4c61-4dd6-a0f0-3fc121162bb8"
+  },
+  {
+    "Id": "e97fceb5-a0bd-40f5-a03b-8917ae667511",
+    "EventId": "f6d446fe-9852-4428-9c5c-6f23d902fb4d",
+    "HomePlayerScore": 0,
+    "AwayPlayerScore": 0,
+    "HomePlayerId": "b5a369de-9db6-4088-837d-525f3b573509",
+    "AwayPlayerId": "b909d54a-105b-487e-9a72-afab7619f728"
+  },
+  {
+    "Id": "7dd85f54-f9f5-4220-abc7-4ea1dddc14e6",
+    "EventId": "31f49b45-7dfd-44cf-bda2-d3a718e5db85",
+    "HomePlayerScore": 3,
+    "AwayPlayerScore": 3,
+    "HomePlayerId": "be595bb9-5817-41a5-b930-22f96423af27",
+    "AwayPlayerId": "1cd1883a-ab26-4d90-8a92-d3ae85823405"
+  }
+]
