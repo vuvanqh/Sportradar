@@ -1,3 +1,10 @@
 <Solution>
-  <Project Path="Sportradar.Backend/Sportradar.Backend.csproj" />
+  <Folder Name="/src/">
+    <Project Path="Sportradar.Backend/Sportradar.Backend.csproj" />
+    <Project Path="Sportradar.Core/Sportradar.Core.csproj" />
+    <Project Path="Sportradar.Infrastructure/Sportradar.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="Sportradar.UnitTests/Sportradar.UnitTests.csproj" />
+  </Folder>
 </Solution>
