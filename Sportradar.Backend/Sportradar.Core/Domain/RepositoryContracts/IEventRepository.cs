@@ -11,6 +11,7 @@ public interface IEventRepository
     Task<List<Event>> GetByDateRangeAsync(DateTime startDate, DateTime endDate);
     Task<List<Event>> GetByCompetitionAsync(Guid competitionId);
     Task<Event?> GetByIdAsync(Guid eventId);
+    Task<List<Event>> GetAllAsync();
     Task AddAsync(Event ev);
     Task UpdateAsync(Event ev);
     Task DeleteAsync(Guid eventId);

@@ -1,5 +1,6 @@
 ﻿using Sportradar.Core.Application.DTOs;
 using Sportradar.Core.Value_Objects;
+using System.Text.Json.Serialization;
 
 namespace Sportradar.Core.Entities;
 
@@ -22,32 +23,40 @@ public abstract class Event
 
     //relations
     public Guid SportId { get; set; }
+    [JsonIgnore]
     public Sport Sport { get; set; } = null!;
     public Guid LocationId { get; set; }
+    [JsonIgnore]
     public Location Location { get; set; } = null!;
-    public Guid? ResultId { get; set; }
+    [JsonIgnore]
     public Result? Result { get; set; }
     public Guid? CompetitionId { get; set; }
+    [JsonIgnore]
     public Competition? Competition { get; set; }
 }
 
 public class TeamEvent: Event
 {
     public Guid HomeTeamId { get; set; }
+    [JsonIgnore]
     public SportTeam HomeTeam { get; set; } = null!;
     public Guid AwayTeamId { get; set; }
+    [JsonIgnore]
     public SportTeam AwayTeam { get; set; } = null!;
 }
 
 public class FreeForAllEvent : Event
 {
+    [JsonIgnore]
     public ICollection<Player> Participants { get; set; } = new List<Player>();
 }
 
 public class OneOnOneEvent : Event
 {
     public Guid HomePlayerId { get; set; }
+    [JsonIgnore]
     public Player HomePlayer { get; set; } = null!;
     public Guid AwayPlayerId { get; set; }
+    [JsonIgnore]
     public Player AwayPlayer { get; set; } = null!;
 }

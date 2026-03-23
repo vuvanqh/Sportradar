@@ -1,4 +1,6 @@
-﻿namespace Sportradar.Core.Entities;
+﻿using System.Text.Json.Serialization;
+
+namespace Sportradar.Core.Entities;
 
 public enum ResultType
 {
@@ -13,6 +15,7 @@ public abstract class Result
 
     //relations
     public required Guid EventId { get; set; }
+    [JsonIgnore]
     public Event Event { get; set; } = null!;
 }
 
@@ -23,8 +26,10 @@ public class TeamResult : Result
 
     //relations
     public Guid HomeTeamId { get; set; }
+    [JsonIgnore]
     public SportTeam HomeTeam { get; set; } = null!;
     public Guid AwayTeamId { get; set; }
+    [JsonIgnore]
     public SportTeam AwayTeam { get; set; } = null!;
 }
 
@@ -35,13 +40,16 @@ public class OneOnOneResult : Result
 
     //relations
     public Guid HomePlayerId { get; set; }
+    [JsonIgnore]
     public Player HomePlayer { get; set; } = null!;
     public Guid AwayPlayerId { get; set; }
+    [JsonIgnore]
     public Player AwayPlayer { get; set; } = null!;
 }
 
 public class FreeForAllResult : Result
 {
+    [JsonIgnore]
     public ICollection<FreeForAllResultEntry> Entries { get; set; } = new List<FreeForAllResultEntry>();   
 }
 
@@ -51,7 +59,9 @@ public class  FreeForAllResultEntry
 
     //relations 
     public required Guid PlayerId { get; set; }
+    [JsonIgnore]
     public Player Player { get; set; } = null!;
     public Guid ResultId { get; set; }
+    [JsonIgnore]
     public FreeForAllResult Result { get; set; } = null!;
 }

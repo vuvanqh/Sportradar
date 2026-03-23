@@ -185,4 +185,9 @@ public class EventService : IEventService
         }
         return l;
     }
+
+    public async Task<List<EventResponse>> GetAllEvents()
+    {
+        return (await _eventRepository.GetAllAsync()).Select(EventMapper.EventToEventResponse).ToList();
+    }
 }

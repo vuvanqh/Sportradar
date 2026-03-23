@@ -1,4 +1,6 @@
-﻿namespace Sportradar.Core.Entities;
+﻿using System.Text.Json.Serialization;
+
+namespace Sportradar.Core.Entities;
 
 public class Location
 {
@@ -8,5 +10,6 @@ public class Location
     public string? Venue { get; set; }
 
     //relations
+    [JsonIgnore]
     public ICollection<Event> Events { get; set; } = new List<Event>();
 }

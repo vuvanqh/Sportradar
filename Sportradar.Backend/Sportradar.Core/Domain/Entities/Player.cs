@@ -1,4 +1,6 @@
-﻿namespace Sportradar.Core.Entities;
+﻿using System.Text.Json.Serialization;
+
+namespace Sportradar.Core.Entities;
 
 public class Player
 {
@@ -8,5 +10,8 @@ public class Player
     public required string Country { get; set; }
 
     public Guid? TeamId {get;set;}
+    [JsonIgnore]
     public SportTeam? Team { get; set; }
+    [JsonIgnore]
+    public ICollection<FreeForAllEvent> FreeForAllEvents { get; set; }= new List<FreeForAllEvent>();
 }

@@ -16,6 +16,7 @@ public class EventResponse
     [Required] public DateTime EndTime { get; init; }
     [Required] public Status Status { get; init; }
     [Required] public string SportName { get; init; } = null!;
+    [Required] public virtual EventType EventType { get; init; } 
 
     public string? Description { get; init; }
     public Guid? CompetitionId { get; init; }
@@ -24,6 +25,7 @@ public class EventResponse
 
 public class TeamEventResponse : EventResponse
 {
+    [Required] public override EventType EventType { get; init; } = EventType.Team;
     [Required] public Guid HomeTeamId { get; init; }
     [Required] public string HomeTeamName { get; init; } = null!;
     [Required] public Guid AwayTeamId { get; init; }
@@ -33,6 +35,7 @@ public class TeamEventResponse : EventResponse
 
 public class OneOnOneEventResponse : EventResponse
 {
+    [Required] public override EventType EventType { get; init; } = EventType.OneOnOne;
     [Required] public Guid HomePlayerId { get; init; }
     [Required] public string HomePlayerFirstName { get; init; } = null!;
     [Required] public string HomePlayerLastName { get; init; } = null!;
@@ -44,6 +47,7 @@ public class OneOnOneEventResponse : EventResponse
 
 public class FreeForAllEventResponse : EventResponse
 {
+    [Required] public override EventType EventType { get; init; } = EventType.FreeForAll;
     [Required] public List<PlayerPreviewDTO> Participants { get; init; } = new List<PlayerPreviewDTO>();
     [Required] public int NumberOfParticipants { get; init; }
     [Required] public FreeForAllResultDTO? Result { get; init; }

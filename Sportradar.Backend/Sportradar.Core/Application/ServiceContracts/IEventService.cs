@@ -7,6 +7,7 @@ namespace Sportradar.Core.Application.ServiceContracts;
 
 public interface IEventService
 {
+    Task<List<EventResponse>> GetAllEvents();
     Task<List<EventResponse>> GetEventsBySport(Guid sportId);
     Task<List<EventResponse>> GetEventsByCity(string city);
     Task<List<EventResponse>> GetEventsByCountry(string country);
