@@ -110,6 +110,8 @@ public static class BaselineConfigExtentions
                 Version = "v1",
                 Description = "API for managing sports events, players, and locations."
             });
+            options.UseAllOfForInheritance();
+            options.UseOneOfForPolymorphism();
         });
     }
 }
