@@ -1,9 +1,10 @@
 import EventPreviewCard from "../components/EventPreviewCard";
 import type { Event } from "../types/eventTypes";
+import useEvents from "../customHooks/useEvents";
 
-type eventPageProps = {
-    events: Event[]
-}
+// type eventPageProps = {
+//     events: Event[]
+// }
 
 export const mockEvents: Event[] = [
   {
@@ -106,8 +107,12 @@ export const mockEvents: Event[] = [
   }
 ];
 
-export default function EventPage({events}: eventPageProps){
+export default function EventPage(){
+    const {events, isLoading} = useEvents();
+
+    if(isLoading) return;
+
     return <div className="event-grid">
-            {mockEvents.map(e=><EventPreviewCard event={e} key={e.eventId}/>)}
+            {events.map(e=><EventPreviewCard event={e} key={e.eventId}/>)}
     </div>
 }

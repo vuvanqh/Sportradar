@@ -44,8 +44,8 @@ export default function EventPreviewCard({event}: eventPreviewCardProps){
                 <p className="datetime">{date} • {time}</p>
                 <p className="location">{loc.country}, {loc.city}, {loc.venue ?? ""}</p>
             </div>
-            <div className="event-content">{content}</div>
         </div>
+        <div className="event-content">{content}</div>
     </article>
 }
 

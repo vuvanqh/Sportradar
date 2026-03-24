@@ -5,11 +5,15 @@
 
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 
-  max-width: 200;
-  margin: 2 auto;
+  max-width: 370px;   
+  width: 100%;
+  margin: 0 auto;      
 
+  min-height: 200px;
+
+  justify-content: space-between;
   box-shadow: 0 4px 10px rgba(0,0,0,0.06);
 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -29,9 +33,10 @@
 }
 
 .event-header h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin: 0;
+  padding-bottom: 2rem;
 }
 
 /* badges */
@@ -105,7 +110,7 @@
 .event-content {
   font-size: 0.9rem;
   font-weight: 600;
-  margin-top: 4px;
+  margin-top: auto; 
 }
 
 /* reset */
@@ -115,10 +120,11 @@
 
 .event-grid {
   display: grid;
-  gap: 16px;
-  padding: 16px;
+  gap: 30px;
+  padding: 16px 32px;
 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, max-content);
+  justify-content: center;
 }
 
 .event-preview-card hr {

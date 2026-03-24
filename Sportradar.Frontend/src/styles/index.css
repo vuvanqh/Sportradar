@@ -5,3 +5,152 @@
 .page-content {
   margin-top: 4.5rem; 
 }
+
+.hero {
+  position: relative;
+  height: 60vh;
+
+  background-image: url("../assets/sport.jpg"); /* 👈 change image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.75),
+    rgba(15, 23, 42, 0.5)
+  );
+
+  z-index: 0;
+}
+
+/* content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+
+  color: #fff;
+  animation: heroFade 700ms ease-out both;
+}
+
+/* title */
+.hero-content h1 {
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  margin-bottom: 1.5rem;
+}
+
+/* button */
+.hero-content a {
+  display: inline-block;
+
+  padding: 0.8rem 2.2rem;
+  border-radius: 999px;
+
+  background: #2563eb; /* 👈 blue instead of salmon */
+  color: #fff;
+
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.hero-content a:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    height: 70vh;
+  }
+}
+
+.footer {
+  background: #0f172a; /* dark navy */
+  color: #cbd5f5;
+
+  padding: 24px 40px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* text */
+.footer p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* links */
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-size: 0.85rem;
+
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
