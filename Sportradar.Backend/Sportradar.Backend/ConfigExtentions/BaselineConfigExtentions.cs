@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi;
 using Sportradar.Core.Application.DTOs;
 using Sportradar.Core.Application.ServiceContracts;
 using Sportradar.Core.Application.Services;
@@ -99,5 +100,16 @@ public static class BaselineConfigExtentions
         services.AddScoped<IEventRepository, EventRepository>();
         services.AddScoped<IPlayerRepository, PlayerRepository>();
         services.AddScoped<ILocationRepository, LocationRepository>();
+
+        services.AddSwaggerGen(options =>
+        {
+            options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Sportradar.Backend.xml"));
+            options.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Title = "Sportradar API",
+                Version = "v1",
+                Description = "API for managing sports events, players, and locations."
+            });
+        });
     }
 }

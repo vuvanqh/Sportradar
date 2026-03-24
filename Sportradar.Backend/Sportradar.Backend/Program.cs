@@ -1,5 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using Sportradar.Backend.ConfigExtentions;
 using Sportradar.Infrastructure;
 using System;
@@ -12,29 +13,35 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
 
         builder.Services.ConfigureBaselineServices(builder.Configuration);
 
-        var app = builder.Build();
+        builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider services, LoggerConfiguration loggerConfiguration) => {
+            loggerConfiguration.ReadFrom.Configuration(context.Configuration) 
+                               .ReadFrom.Services(services); 
+        });
 
-        // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
-            app.MapOpenApi();
-        }
+        var app = builder.Build();
 
         using (var scope = app.Services.CreateScope())
         {
             var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-            Console.WriteLine(context.Database.GetConnectionString());
             await DbSeed.SeedAsync(context);
         }
 
+        app.UseRouting();
+
+        app.UseSerilogRequestLogging();
         //app.UseHttpsRedirection();
 
         //app.UseAuthorization();
         app.UseCors("AllowFrontend");
+
+        app.UseSwagger();
+        app.UseSwaggerUI(c =>
+        {
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sportradar API v1");
+        });
 
         app.MapControllers();
 
