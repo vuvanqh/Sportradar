@@ -16,6 +16,6 @@ public class SportRepository : ISportRepository
     }
     public async Task<List<Sport>> GetAllAsync()
     {
-        throw await _context.Sports.ToListAsync();
+        return await _context.Sports.ToListAsync();
     }
 }
