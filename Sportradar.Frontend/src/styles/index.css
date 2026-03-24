@@ -1,2 +1,7 @@
 @import "./navbar.css";
 @import "./sidebar.css";
+@import "./eventPreviewCard.css";
+
+.page-content {
+  margin-top: 4.5rem; 
+}

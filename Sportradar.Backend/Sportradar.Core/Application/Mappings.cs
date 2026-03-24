@@ -15,7 +15,7 @@ public static class EventMapper
         {
             OneOnOneEvent oneOnOneEvent => OneOnOneMap(oneOnOneEvent),
             TeamEvent teamEvent => TeamEventMap(teamEvent),
-            FreeForAllEvent freeForAllEvent => TeamEventToTeamEventResponse(freeForAllEvent),
+            FreeForAllEvent freeForAllEvent => FreeForAllMap(freeForAllEvent),
             _ => throw new ArgumentException("Unknown event type")
         };
     }
@@ -53,7 +53,7 @@ public static class EventMapper
         };
     }
         
-    private static FreeForAllEventResponse TeamEventToTeamEventResponse(FreeForAllEvent e)
+    private static FreeForAllEventResponse FreeForAllMap(FreeForAllEvent e)
     {
         FreeForAllResult? freeForAllResult = e.Result as FreeForAllResult;
         return new FreeForAllEventResponse

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Sportradar.Core.Application.DTOs;
 using Sportradar.Core.Application.ServiceContracts;
 using Sportradar.Core.Application.Services;
 using Sportradar.Core.Domain;
@@ -7,6 +8,7 @@ using Sportradar.Core.Domain.RepositoryContracts;
 using Sportradar.Infrastructure;
 using Sportradar.Infrastructure.Repositories;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 
 namespace Sportradar.Backend.ConfigExtentions;
 
@@ -23,9 +25,6 @@ public static class BaselineConfigExtentions
         {
             options.Filters.Add(new ConsumesAttribute("application/json"));
             options.Filters.Add(new ProducesAttribute("application/json"));
-        }).AddJsonOptions(options =>
-        {
-            options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
         });
 
         services.AddDbContext<ApplicationDbContext>(options =>
@@ -40,6 +39,47 @@ public static class BaselineConfigExtentions
                     errorNumbersToAdd: null);
             });
 
+        });
+
+        services.Configure<JsonOptions>(options =>
+        {
+            options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            options.JsonSerializerOptions.TypeInfoResolver  = new DefaultJsonTypeInfoResolver
+            {
+                Modifiers =
+                {
+                    ti =>
+                    {
+                        if (ti.Type == typeof(EventResponse))
+                        {
+                            ti.PolymorphismOptions = new JsonPolymorphismOptions
+                            {
+                                TypeDiscriminatorPropertyName = "eventType",
+                                DerivedTypes =
+                                {
+                                    new JsonDerivedType(typeof(TeamEventResponse), "Team"),
+                                    new JsonDerivedType(typeof(OneOnOneEventResponse), "OneOnOne"),
+                                    new JsonDerivedType(typeof(FreeForAllEventResponse), "FreeForAll")
+                                }
+                            };
+                        }
+
+                        if (ti.Type == typeof(ResultDTO))
+                        {
+                            ti.PolymorphismOptions = new JsonPolymorphismOptions
+                            {
+                                TypeDiscriminatorPropertyName = "resultType",
+                                DerivedTypes =
+                                {
+                                    new JsonDerivedType(typeof(TeamResultDTO), "Team"),
+                                    new JsonDerivedType(typeof(OneOnOneResultDTO), "OneOnOne"),
+                                    new JsonDerivedType(typeof(FreeForAllResultDTO), "FreeForAll")
+                                }
+                            };
+                        }
+                    }
+                }
+            };
         });
 
         services.AddScoped<IEventService, EventService>();

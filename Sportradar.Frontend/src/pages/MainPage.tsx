@@ -9,6 +9,8 @@ export default function MainPage(){
     return <>
         <Navbar onSidebarOpen={() => setSidebarOpen(prev => !prev)}/>
         <Sidebar open={sidebarOpen} onClose={()=>setSidebarOpen(false)}/>
-        <Outlet/>
+        <main className="page-content">
+                <Outlet/>
+        </main>
     </>
 }

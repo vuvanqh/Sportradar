@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainPage from "./pages/MainPage";
+import EventPage from "./pages/EventPage";
 
 const router = createBrowserRouter([
     {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
         },
         {
             path: "events",
-            element: <div>Events page</div>
+            element: <EventPage events={[]}/>
         },
         {
             path: "competitions",
