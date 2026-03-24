@@ -39,4 +39,8 @@ public class PlayerRepository : IPlayerRepository
     }
     public async Task<List<Player>> GetAll() => await _context.Players.ToListAsync();
 
+    public async Task<List<Player>> GetByTeamAsync(Guid teamId)
+    {
+        return await _context.Players.Where(p => p.TeamId == teamId).ToListAsync();
+    }
 }

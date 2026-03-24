@@ -28,6 +28,7 @@ public static class EventMapper
             Title = e.Title,
             Location = new LocationDTO()
             {
+                LocationId = e.LocationId,
                 Venue = e.Location.Venue,
                 City = e.Location.City,
                 Country = e.Location.Country
@@ -62,6 +63,7 @@ public static class EventMapper
             Title = e.Title,
             Location = new LocationDTO()
             {
+                LocationId = e.LocationId,
                 Venue = e.Location.Venue,
                 City = e.Location.City,
                 Country = e.Location.Country
@@ -94,6 +96,7 @@ public static class EventMapper
             Title = e.Title,
             Location = new LocationDTO()
             {
+                LocationId = e.LocationId,
                 Venue = e.Location.Venue,
                 City = e.Location.City,
                 Country = e.Location.Country

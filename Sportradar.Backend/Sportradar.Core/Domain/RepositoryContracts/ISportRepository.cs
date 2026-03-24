@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Sportradar.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Sportradar.Core.Domain.RepositoryContracts
+namespace Sportradar.Core.Domain.RepositoryContracts;
+
+public interface ISportRepository
 {
-    internal interface ISportRepository
-    {
-    }
+    Task<List<Sport>> GetAllAsync();
 }

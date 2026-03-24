@@ -8,6 +8,7 @@ namespace Sportradar.Core.Domain.RepositoryContracts;
 public interface IPlayerRepository
 {
     Task<List<Player>> GetAll();
+    Task<List<Player>> GetByTeamAsync(Guid teamId);
     Task<Player?> GetByIdAsync(Guid id);
     Task CreateAsync(Player loplayercation);
     Task DeleteAsync(Guid id);

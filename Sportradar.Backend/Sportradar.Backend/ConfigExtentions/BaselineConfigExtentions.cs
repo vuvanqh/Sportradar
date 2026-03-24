@@ -95,11 +95,17 @@ public static class BaselineConfigExtentions
             };
         });
 
+        //services
         services.AddScoped<IEventService, EventService>();
-        
+        services.AddScoped<ITeamService, TeamService>();
+
+        //repositories
         services.AddScoped<IEventRepository, EventRepository>();
         services.AddScoped<IPlayerRepository, PlayerRepository>();
         services.AddScoped<ILocationRepository, LocationRepository>();
+        services.AddScoped<ISportRepository, SportRepository>();
+        services.AddScoped<ICompetitionRepository, CompetitionRepository>();
+        services.AddScoped<ITeamRepository, TeamRepository>();
 
         services.AddSwaggerGen(options =>
         {
