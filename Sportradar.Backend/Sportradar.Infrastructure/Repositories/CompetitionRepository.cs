@@ -16,16 +16,23 @@ public class CompetitionRepository : ICompetitionRepository
     }
     public async Task<List<Competition>> GetAllAsync()
     {
-        return await _context.Competitions.ToListAsync();
+        return await _context.Competitions
+            .Include(c=>c.Sport)
+            .ToListAsync();
     }
 
     public async Task<Competition?> GetByIdAsync(Guid competitionId)
     {
-        return await _context.Competitions.FirstOrDefaultAsync(c=>c.Id==competitionId);
+        return await _context.Competitions
+            .Include(c => c.Sport)
+            .FirstOrDefaultAsync(c=>c.Id==competitionId);
     }
 
     public async Task<List<Competition>> GetBySportIdAsync(Guid sportId)
     {
-        return await _context.Competitions.Where(c => c.SportId == sportId).ToListAsync();
+        return await _context.Competitions.
+            Include(c => c.Sport)
+            .Where(c => c.SportId == sportId)
+            .ToListAsync();
     }
 }
