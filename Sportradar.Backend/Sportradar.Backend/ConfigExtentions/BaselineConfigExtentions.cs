@@ -98,6 +98,8 @@ public static class BaselineConfigExtentions
         //services
         services.AddScoped<IEventService, EventService>();
         services.AddScoped<ITeamService, TeamService>();
+        services.AddScoped<IPlayerService, PlayerService>();
+        services.AddScoped<ILocationService, LocationService>();
 
         //repositories
         services.AddScoped<IEventRepository, EventRepository>();
