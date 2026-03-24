@@ -1,0 +1,141 @@
+@import "@fontsource/inter";
+
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: #f5f7fb; 
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 clamp(1rem, 4vw, 2rem);
+
+  background: rgba(8, 18, 38, 0.85);
+  
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+
+  z-index: 1200;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.navbar.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.right {
+  gap: clamp(0.75rem, 2vw, 1.75rem);
+}
+
+.logo {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.03em;
+}
+
+.search {
+  height: 2.4rem;
+  padding: 0 0.8rem;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+
+  font-size: 0.9rem;
+
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.search::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-link {
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.menu-btn {
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  cursor: pointer;
+
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+
+  transition: background 0.2s ease;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .search {
+    display: none;
+  }
+
+  .nav-link {
+    display: none;
+  }
+}
