@@ -30,82 +30,68 @@ public class EventRepository : IEventRepository
 
     public async Task<List<Event>> GetAllAsync()
     {
-        return await _context.Events
-            .Include(e => e.Location)
-            .Include(e => e.Sport)
-            .Include(e => e.Result)
-            .Include(e => e.Competition)
-            .ToListAsync();
+        return await QueryAll(_context.Events);
     }
 
     public async Task<List<Event>> GetByCityAsync(string city)
     {
-        return await _context.Events.Where(e => e.Location.City == city)
-            .Include(e=>e.Location)
-            .Include(e=>e.Sport)
-            .Include(e=>e.Result)
-            .Include(e=>e.Competition)
-            .ToListAsync();
+        return await QueryAll(_context.Events.Where(e => e.Location.City == city));
     }
 
     public async Task<List<Event>> GetByCompetitionAsync(Guid competitionId)
     {
-        return await _context.Events.Where(e => e.CompetitionId == competitionId)
-            .Include(e => e.Location)
-            .Include(e => e.Sport)
-            .Include(e => e.Result)
-            .Include(e => e.Competition)
-            .ToListAsync();
+        return await QueryAll(_context.Events.Where(e => e.CompetitionId == competitionId));
     }
 
     public async Task<List<Event>> GetByCountryAsync(string country)
     {
-        return await _context.Events.Where(e => e.Location.Country == country)
-            .Include(e => e.Location)
-            .Include(e => e.Sport)
-            .Include(e => e.Result)
-            .Include(e => e.Competition)
-            .ToListAsync();
+        return await QueryAll(_context.Events.Where(e => e.Location.Country == country));
     }
-
     public async Task<List<Event>> GetByDateRangeAsync(DateTime startDate, DateTime endDate)
     {
-        return await _context.Events.Where(e => e.StartTime>=startDate && e.StartTime<=endDate)
-            .Include(e => e.Location)
-            .Include(e => e.Sport)
-            .Include(e => e.Result)
-            .Include(e => e.Competition)
-            .ToListAsync();
+        return await QueryAll(_context.Events.Where(e => e.StartTime >= startDate && e.StartTime <= endDate));
     }
 
     public async Task<Event?> GetByIdAsync(Guid eventId)
     {
-        return await _context.Events.Where(e => e.Id == eventId)
+        var baseQuery = _context.Events
             .Include(e => e.Location)
             .Include(e => e.Sport)
             .Include(e => e.Result)
-            .Include(e => e.Competition)
-            .FirstOrDefaultAsync();
+            .Include(e => e.Competition);
+
+        var team = await baseQuery
+        .OfType<TeamEvent>()
+        .Include(e => e.HomeTeam)
+        .Include(e => e.AwayTeam)
+        .FirstOrDefaultAsync(e => e.Id == eventId);
+
+        if (team != null) return team;
+
+        var one = await baseQuery
+            .OfType<OneOnOneEvent>()
+            .Include(e => e.HomePlayer)
+            .Include(e => e.AwayPlayer)
+            .FirstOrDefaultAsync(e => e.Id == eventId);
+
+        if (one != null) return one;
+
+        var free = await baseQuery
+            .OfType<FreeForAllEvent>()
+            .Include(e => e.Participants)
+            .FirstOrDefaultAsync(e => e.Id == eventId);
+
+        return free;
     }
 
     public async Task<List<Event>> GetByLocationAsync(Guid locationId)
     {
-        return await _context.Events.Where(e => e.LocationId == locationId)
-            .Include(e => e.Location)
-            .Include(e => e.Sport)
-            .Include(e => e.Result)
-            .Include(e => e.Competition)
-            .ToListAsync();
+        return await QueryAll(_context.Events.Where(e => e.LocationId == locationId));
     }
 
     public async Task<List<Event>> GetBySportAsync(Guid sportId)
     {
-        return await _context.Events.Where(e => e.SportId == sportId)
-            .Include(e => e.Location)
-            .Include(e => e.Sport)
-            .Include(e => e.Result)
-            .Include(e => e.Competition)
-            .ToListAsync();
+        return await QueryAll(_context.Events.Where(e => e.SportId == sportId));
     }
 
     public async Task UpdateAsync(Event ev)
@@ -113,5 +99,44 @@ public class EventRepository : IEventRepository
         if((await _context.Events.FirstOrDefaultAsync(e => e.Id == ev.Id)) is null)
          _context.Events.Update(ev);
         await _context.SaveChangesAsync();
+    }
+
+    private IQueryable<TeamEvent> TeamEventQuery(IQueryable<Event> baseQuery)
+    {
+        return baseQuery
+            .OfType<TeamEvent>()
+            .Include(e => e.HomeTeam)
+            .Include(e => e.AwayTeam);
+    }
+    private IQueryable<OneOnOneEvent> OneOnOneEventQuery(IQueryable<Event> baseQuery)
+    {
+        return baseQuery
+            .OfType<OneOnOneEvent>()
+            .Include(e => e.HomePlayer)
+            .Include(e => e.AwayPlayer);
+    }
+    private IQueryable<FreeForAllEvent> FreeForAllEventQuery(IQueryable<Event> baseQuery)
+    {
+        return baseQuery
+            .OfType<FreeForAllEvent>()
+            .Include(e => e.Participants);
+    }
+
+    private async Task<List<Event>> QueryAll(IQueryable<Event> baseQuery)
+    {
+        IQueryable<Event> query = baseQuery
+            .Include(e => e.Location)
+            .Include(e => e.Sport)
+            .Include(e => e.Result)
+            .Include(e => e.Competition);
+
+        var oneOnOneEvent = await OneOnOneEventQuery(query).ToListAsync();
+        var teamEvent = await TeamEventQuery(query).ToListAsync();
+        var freeForAllEvent = await FreeForAllEventQuery(query).ToListAsync();
+
+        return teamEvent.Cast<Event>()
+            .Concat(oneOnOneEvent)
+            .Concat(freeForAllEvent)
+            .ToList();
     }
 }

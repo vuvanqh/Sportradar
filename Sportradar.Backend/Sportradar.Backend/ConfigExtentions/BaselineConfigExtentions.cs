@@ -21,6 +21,18 @@ public static class BaselineConfigExtentions
             options.LowercaseUrls = true;
         });
 
+        services.AddCors(options =>
+        {
+            options.AddPolicy("AllowFrontend",
+                policy =>
+                {
+                    policy
+                        .WithOrigins("http://localhost:5173")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials(); 
+                });
+        });
         services.AddControllers(options =>
         {
             options.Filters.Add(new ConsumesAttribute("application/json"));

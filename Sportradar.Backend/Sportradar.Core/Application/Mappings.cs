@@ -37,7 +37,7 @@ public static class EventMapper
             Status = e.Status,
             SportName = e.Sport.Name,
             Description = e.Description,
-            CompetitionId = e.CompetitionId,
+            CompetitionId = e.Competition?.Id,
             CompetitionName = e.Competition?.Name,
             HomePlayerId = e.HomePlayerId,
             HomePlayerFirstName = e.HomePlayer.FirstName,
@@ -71,7 +71,7 @@ public static class EventMapper
             Status = e.Status,
             SportName = e.Sport.Name,
             Description = e.Description,
-            CompetitionId = e.CompetitionId,
+            CompetitionId = e.Competition?.Id,
             CompetitionName = e.Competition?.Name,
             Result = freeForAllResult != null ? new FreeForAllResultDTO()
             {
@@ -103,7 +103,7 @@ public static class EventMapper
             Status = e.Status,
             SportName = e.Sport.Name,
             Description = e.Description,
-            CompetitionId = e.CompetitionId,
+            CompetitionId = e.Competition?.Id,
             CompetitionName = e.Competition?.Name,
             HomeTeamId = e.HomeTeamId,
             HomeTeamName = e.HomeTeam.Name,

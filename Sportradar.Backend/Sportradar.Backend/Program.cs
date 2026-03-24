@@ -34,7 +34,7 @@ public class Program
         //app.UseHttpsRedirection();
 
         //app.UseAuthorization();
-
+        app.UseCors("AllowFrontend");
 
         app.MapControllers();
 
