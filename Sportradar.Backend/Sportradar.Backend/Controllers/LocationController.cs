@@ -55,7 +55,7 @@ public class LocationController : ControllerBase
     /// <param name="country">The name of the country.</param>
     /// <returns>A list of cities in the given country.</returns>
     /// <response code="200">Cities retrieved successfully.</response>
-    [HttpGet("countries/{country:string}")]
+    [HttpGet("countries/{country}")]
     [ProducesResponseType(typeof(List<string>), StatusCodes.Status200OK)]
     public async Task<IActionResult> GetCities(string country)
     {
@@ -70,7 +70,7 @@ public class LocationController : ControllerBase
     /// <param name="city">The name of the city.</param>
     /// <returns>A list of venues in the given location.</returns>
     /// <response code="200">Venues retrieved successfully.</response>
-    [HttpGet("countries/{country:string}/{city:string}")]
+    [HttpGet("countries/{country}/{city}")]
     [ProducesResponseType(typeof(List<string>), StatusCodes.Status200OK)]
     public async Task<IActionResult> GetVenues(string country, string city)
     {

@@ -20,7 +20,8 @@ public class CompetitionService : ICompetitionService
         {
             CompetitionId = resp.Id,
             Name = resp.Name,
-            SportName = resp.Sport.Name
+            SportName = resp.Sport.Name,
+            SportId = resp.SportId
         };
     }
 
@@ -31,7 +32,8 @@ public class CompetitionService : ICompetitionService
         {
             CompetitionId = resp.Id,
             Name = resp.Name,
-            SportName = resp.Sport.Name
+            SportName = resp.Sport.Name,
+            SportId = resp.SportId
         }).ToList();
     }
 
@@ -42,7 +44,8 @@ public class CompetitionService : ICompetitionService
         {
             CompetitionId = resp.Id,
             Name = resp.Name,
-            SportName = resp.Sport.Name
+            SportName = resp.Sport.Name,
+            SportId = resp.SportId
         }).ToList();
     }
 }

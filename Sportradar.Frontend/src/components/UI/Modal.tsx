@@ -1,9 +1,39 @@
-import type { ReactNode } from "react";
 import { createPortal } from "react-dom";
+import { useRef, useEffect } from "react";
 
-export default function Modal({children}:{children:ReactNode})
+type ModalProps = {
+  children: React.ReactNode;
+  open: boolean;
+  onClose: ()=>void;
+};
+
+export default function Modal({children, open, onClose} :ModalProps)
 {
-    return createPortal(<dialog>
+    const dialog = useRef<HTMLDialogElement|null>(null);
+
+    useEffect(() => {
+        const current = dialog.current;
+        if (!current) return;
+        if (open && !current.open) 
+            current.showModal();
+        
+        if (!open && current.open) {
+            current.close();
+            onClose();
+        }
+        
+        const handleClose = () => {
+            current.close();
+            onClose();
+        };
+
+       current.addEventListener("close", handleClose);
+
+        return () => current.removeEventListener("close", handleClose);
+    }, [open]);
+
+    return createPortal(
+    <dialog ref={dialog}>
         {children}
-    </dialog>, document.getElementById("modal")!);
+    </dialog>, document.getElementById("modal")!)
 }

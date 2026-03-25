@@ -1,11 +1,12 @@
 #1 - build
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
-COPY *.sln* .
 
+COPY *.sln* .
 COPY Sportradar.Core/*.csproj Sportradar.Core/
 COPY Sportradar.Infrastructure/*.csproj Sportradar.Infrastructure/
 COPY Sportradar.Backend/*.csproj Sportradar.Backend/
+COPY Sportradar.UnitTests/*.csproj Sportradar.UnitTests/
 
 RUN dotnet restore
 

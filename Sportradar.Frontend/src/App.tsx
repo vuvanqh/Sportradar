@@ -4,6 +4,7 @@ import './styles/App.css'
 import { QueryClientProvider } from '@tanstack/react-query'
 import queryClient from './api/queryClient'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <RouterProvider router={router}>    
       </RouterProvider>
       <ReactQueryDevtools initialIsOpen={false}/>
+      <ToastContainer />
     </QueryClientProvider>
   )
 }

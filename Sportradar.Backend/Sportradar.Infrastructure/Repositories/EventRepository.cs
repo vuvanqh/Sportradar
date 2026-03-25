@@ -15,6 +15,14 @@ public class EventRepository : IEventRepository
 
     public async Task AddAsync(Event ev)
     {
+        var conflictExists = await _context.Events.AnyAsync(e =>
+        e.LocationId == ev.LocationId &&
+        e.StartTime < ev.EndTime &&
+        e.EndTime > ev.StartTime);
+
+        if (conflictExists)
+            throw new InvalidOperationException("Event is already scheduled at that time and location");
+
         await _context.Events.AddAsync(ev);
         await _context.SaveChangesAsync();
     }

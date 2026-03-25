@@ -75,6 +75,7 @@ public static class EventMapper
             Description = e.Description,
             CompetitionId = e.Competition?.Id,
             CompetitionName = e.Competition?.Name,
+            NumberOfParticipants = e.Participants.Count,
             Result = freeForAllResult != null ? new FreeForAllResultDTO()
             {
                 Results = freeForAllResult!.Entries.Select(e => new FreeForAllResultEntryDTO()

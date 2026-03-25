@@ -1,11 +1,11 @@
 import Navbar from "../components/UI/Navbar";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../components/UI/Sidebar";
+import ModalRoot from "../components/ModalRoot";
 import { useState } from "react";
 
 export default function MainPage(){
     const [sidebarOpen, setSidebarOpen] = useState(false);
-
     return <>
         <Navbar onSidebarOpen={() => setSidebarOpen(prev => !prev)}/>
         <Sidebar open={sidebarOpen} onClose={()=>setSidebarOpen(false)}/>
@@ -22,6 +22,7 @@ export default function MainPage(){
                 <Outlet/>
         </main>
 
+
         <footer className="footer">
         <div className="footer-content">
             <p>© {new Date().getFullYear()} All rights reserved.</p>
@@ -33,5 +34,7 @@ export default function MainPage(){
             </div>
         </div>
         </footer>
+
+        <ModalRoot/>
     </>
 }

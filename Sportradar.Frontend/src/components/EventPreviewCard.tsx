@@ -1,10 +1,14 @@
 import type {Event} from "../types/eventTypes";
+import { useContext } from "react";
+import { ModalContext } from "../store/ModalContext";
 
 type eventPreviewCardProps = {
     event: Event
 }
 
 export default function EventPreviewCard({event}: eventPreviewCardProps){
+    const {openView} = useContext(ModalContext);
+
     const loc = event.location
     const start = new Date(event.startTime);
     const end = new Date(event.endTime);
@@ -13,7 +17,7 @@ export default function EventPreviewCard({event}: eventPreviewCardProps){
 
     const time = `${start.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })} - 
                 ${end.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`;
-                
+            
     let content;
     switch(event.eventType){
         case "Team": 
@@ -29,7 +33,7 @@ export default function EventPreviewCard({event}: eventPreviewCardProps){
             content = <p>Error</p>; 
             break;
     }
-    return <article className="event-preview-card">
+    return <article className="event-preview-card" onClick={()=>openView(event)}>
         <div className="event-header">
             <h3>{event.title}</h3>
             <div className="badges">

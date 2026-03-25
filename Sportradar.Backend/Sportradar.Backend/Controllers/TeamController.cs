@@ -57,6 +57,23 @@ public class TeamController : ControllerBase
     }
 
     /// <summary>
+    /// Retrieves all teams associated with a specific sport.
+    /// </summary>
+    /// <remarks>
+    /// Returns a list of teams that belong to the given sport identifier.
+    /// </remarks>
+    /// <param name="id">The unique identifier of the sport.</param>
+    /// <returns>A list of teams associated with the sport.</returns>
+    /// <response code="200">Teams retrieved successfully.</response>
+    [HttpGet("sport/{id}")]
+    [ProducesResponseType(typeof(List<TeamResponse>), StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetTeamsBySportId(Guid id)
+    {
+        var resp = await _teamService.GetTeamBySportId(id);
+        return Ok(resp);
+    }
+
+    /// <summary>
     /// Retrieves all players belonging to a specific team.
     /// </summary>
     /// <remarks>

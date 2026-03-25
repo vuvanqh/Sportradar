@@ -70,24 +70,17 @@ public class EventController : ControllerBase
 
 
     /// <summary>
-    /// Creates a new event.
+    /// Creates a new free-for-all event.
     /// </summary>
-    /// <remarks>
-    /// Accepts a polymorphic request body.  
-    /// The request must match one of:
-    /// - <see cref="CreateTeamEventRequest"/>
-    /// - <see cref="CreateOneOnOneEventRequest"/>
-    /// - <see cref="CreateFreeForAllEventRequest"/>
-    /// 
-    /// The <c>eventType</c> discriminator is required to determine the event type.
-    /// </remarks>
-    /// <param name="request">The event creation request.</param>
+    /// <param name="request">FreeForAll event creation data.</param>
     /// <response code="200">Event created successfully.</response>
-    /// <response code="400">Invalid request data.</response>
-    [HttpPost("create")]
+    /// <response code="400">
+    /// Invalid request or scheduling conflict (e.g., overlapping event at the same location).
+    /// </response>
+    [HttpPost("create/FreeForAll")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<IActionResult> Create(CreateEventRequest request)
+    public async Task<IActionResult> CreateFreeForAll(CreateFreeForAllEventRequest request)
     {             
         try
         {
@@ -98,6 +91,50 @@ public class EventController : ControllerBase
             return BadRequest(e.Message);
         }
         return Ok(new {Message = "Event created Siccesfi;;y"});
+    }
+
+    /// <summary>
+    /// Creates a new OneOnOne event.
+    /// </summary>
+    /// <param name="request">OneOnOne event creation data.</param>
+    /// <response code="200">Event created successfully.</response>
+    /// <response code="400">Invalid request data.</response>
+    [HttpPost("create/OneOnOne")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> CreateOneOnOne(CreateOneOnOneEventRequest request)
+    {
+        try
+        {
+            await _eventService.CreateEvent(request);
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+        return Ok(new { Message = "Event created Siccesfi;;y" });
+    }
+
+    /// <summary>
+    /// Creates a new Team event.
+    /// </summary>
+    /// <param name="request">Team event creation data.</param>
+    /// <response code="200">Event created successfully.</response>
+    /// <response code="400">Invalid request data.</response>
+    [HttpPost("create/Team")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> Create(CreateTeamEventRequest request)
+    {
+        try
+        {
+            await _eventService.CreateEvent(request);
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+        return Ok(new { Message = "Event created Siccesfi;;y" });
     }
 
 

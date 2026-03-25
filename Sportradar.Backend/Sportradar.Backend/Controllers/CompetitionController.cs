@@ -19,10 +19,10 @@ public class CompetitionController : ControllerBase
     /// <summary>
     /// Initializes a new instance of the <see cref="CompetitionController"/> class.
     /// </summary>
-    /// <param name="context">Database context used to access competition data.</param>
-    public CompetitionController(ICompetitionService context)
+    /// <param name="competitionService">Service responsible for handling competition operations.</param>
+    public CompetitionController(ICompetitionService competitionService)
     {
-        _competitionService = context;
+        _competitionService = competitionService;
     }
 
     /// <summary>

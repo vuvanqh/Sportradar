@@ -6,7 +6,6 @@ export let refreshPromise: Promise<string> | null = null;
 
 export const apiClient = axios.create({
     baseURL: apiUrl,
-    withCredentials: true
 });
 
 // apiClient.interceptors.request.use(config => {

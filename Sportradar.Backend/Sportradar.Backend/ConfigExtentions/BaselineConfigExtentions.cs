@@ -28,7 +28,7 @@ public static class BaselineConfigExtentions
                 policy =>
                 {
                     policy
-                        .WithOrigins("http://localhost:5173")
+                        .WithOrigins(config.GetSection("AllowedOrigins").Get<string[]>()!)
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials(); 

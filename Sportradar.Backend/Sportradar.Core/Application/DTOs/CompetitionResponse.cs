@@ -10,4 +10,5 @@ public class CompetitionResponse
     [Required] public Guid CompetitionId { get; init; }
     [Required] public string Name { get; init; } = null!;
     [Required] public string SportName { get; init; } = null!;
+    [Required] public Guid SportId { get; init; }
 }

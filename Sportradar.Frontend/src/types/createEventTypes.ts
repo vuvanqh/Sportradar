@@ -1,8 +1,9 @@
+import type { newLocation } from "./locationTypes";
+
 type CreateEventBase = {
-  eventId: string;
   title: string;
   locationId?: string;
-  newLocation?: Location;
+  newLocation?: newLocation;
   startTime: string;
   endTime: string;
   sportId: string;
@@ -26,7 +27,7 @@ export type CreateOneOnOneEvent = CreateEventBase & {
 
 export type CreateFreeForAllEvent = CreateEventBase & {
     eventType: "FreeForAll";
-    participants: string[]
+    participantIds: string[]
 }
 
 export type CreateEvent = CreateTeamEvent | CreateFreeForAllEvent | CreateOneOnOneEvent

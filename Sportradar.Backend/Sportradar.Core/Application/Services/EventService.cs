@@ -60,6 +60,7 @@ public class EventService : IEventService
         {
             throw new ArgumentException("Either LocationId or NewLocation must be provided.");
         }
+        
         Location location =  await GetLocation(request.LocationId, request.NewLocation);
         await _eventRepository.AddAsync(request.ToEvent(location.Id));
     }

@@ -3,9 +3,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 
-#using a non root user
-#USER node 
-#COPY --chown=node:node . .
 COPY . .
 
 ARG VITE_API_BASE_URL

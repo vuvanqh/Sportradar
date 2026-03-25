@@ -1,0 +1,58 @@
+.oneonone-event-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* score stays consistent with team */
+.team-score {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* layout: player vs player */
+.versus-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* player cards */
+.player {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  min-width: 120px;
+
+  transition: all 0.2s ease;
+}
+
+.player p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* make last name slightly stronger */
+.player p:last-child {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* VS text */
+.vs {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* winner highlight */
+.player.winner {
+  background: #dcfce7;
+  color: #166534;
+  transform: scale(1.05);
+}
