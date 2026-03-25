@@ -114,8 +114,8 @@ html {
   background: #0f172a;
   color: #cbd5f5;
 
-  padding: 24px 40px;
-  margin-top: 40px;
+  padding: 40px;
+  margin-top: auto;
 }
 
 .footer-content {
@@ -298,4 +298,15 @@ dialog::backdrop {
 
 .row-style input {
   width: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
