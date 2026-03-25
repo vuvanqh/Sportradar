@@ -120,18 +120,22 @@ The focus is on functionality and integration rather than advanced UI.
 
 ***
 
-## Running the Application
+### Requirements
+- Docker Desktop (must be installed and running)
 
-To run the application:
+### Setup
 
-1. Clone the repository
+1. Start Docker Desktop  
+   Ensure Docker Desktop is running before executing any commands.
+
+2. Clone the repository
    git clone <repository-url>
    cd Sportradar
 
-2. Create a `.env` file in the root directory with:
+3. Create a `.env` file in the root directory with:
    SA_PASSWORD=YourStrong!Passw0rd
 
-3. Start the application:
+4. Start the application:
    docker compose up --build
 
 After startup:
