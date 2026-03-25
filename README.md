@@ -110,8 +110,6 @@ The focus is on functionality and integration rather than advanced UI.
 ***
 ## Application Preview
 
-![UI](./assets/ui.png)
-
 ![Event Page](./assets/event-page.png)
 
 ![Event Modal](./assets/event.png)
