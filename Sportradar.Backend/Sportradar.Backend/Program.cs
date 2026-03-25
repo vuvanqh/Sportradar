@@ -26,6 +26,9 @@ public class Program
         using (var scope = app.Services.CreateScope())
         {
             var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+            await context.Database.MigrateAsync();
+
             await DbSeed.SeedAsync(context);
         }
 
