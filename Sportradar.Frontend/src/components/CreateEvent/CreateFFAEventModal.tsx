@@ -109,8 +109,18 @@ export default function CreateFFAEvent({open = false, onClose}: eventModalProps)
                 <Select placeholder="Select location..." options={locations.map(l => ({ value: l.locationId, label: `${l.country} ${l.city} ${l.venue ?? ""}` }))} onChange={setLocation} />
                 <input type="hidden" name="locationId" value={location?.value ?? ""} />
             </div>
-                <input name="startTime" type="datetime-local" />
-                <input name="endTime" type="datetime-local" />
+
+             <div className="row-style">
+                <label htmlFor="startTime">
+                    <p>Start Time</p>
+                    <input name="startTime" type="datetime-local" />
+                </label>
+                <label htmlFor="endTime">
+                    <p>End Time</p>
+                    <input name="endTime" type="datetime-local" />
+                </label>
+            </div>
+            
             <div className="row">
                 <Select placeholder="Select sport..." options={sports.map(s => ({ value: s.sportId, label: s.name }))} onChange={(val) => { setSport(val?.value ?? ""); setCompetition(null); }} />
                 <input type="hidden" name="sportId" value={sport} />

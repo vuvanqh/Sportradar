@@ -90,7 +90,7 @@ public class EventController : ControllerBase
         {
             return BadRequest(e.Message);
         }
-        return Ok(new {Message = "Event created Siccesfi;;y"});
+        return Ok(new {Message = "Event created Siccesfully"});
     }
 
     /// <summary>
@@ -112,7 +112,7 @@ public class EventController : ControllerBase
         {
             return BadRequest(e.Message);
         }
-        return Ok(new { Message = "Event created Siccesfi;;y" });
+        return Ok(new { Message = "Event created Siccesfully" });
     }
 
     /// <summary>
@@ -134,7 +134,7 @@ public class EventController : ControllerBase
         {
             return BadRequest(e.Message);
         }
-        return Ok(new { Message = "Event created Siccesfi;;y" });
+        return Ok(new { Message = "Event created Successfully" });
     }
 
 
