@@ -12,7 +12,7 @@ export default function MainPage(){
 
         <header className="hero">
             <div className="hero-content">
-                <h1>Your Fabourite Sport Events</h1>
+                <h1>Your Favourite Sport Events</h1>
                 <p>Discover competitions, follow matches, and stay updated</p>
                 <a href="#content">Learn More</a>
             </div>
